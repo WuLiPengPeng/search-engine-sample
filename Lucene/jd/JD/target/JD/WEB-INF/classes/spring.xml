@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:task="http://www.springframework.org/schema/task"
+       xsi:schemaLocation="
+           http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+           http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd
+           http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+           http://www.springframework.org/schema/task http://www.springframework.org/schema/task/spring-task-3.0.xsd">
+    <!-- 引入属性文件 -->
+	<!--<context:property-placeholder location="classpath:config.properties" />-->
+	<!-- spring扫描包路径,不扫描controller -->
+	<!--<context:component-scan base-package="com.service">-->
+	  <!--<context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller" /> -->
+	<!--</context:component-scan>    -->
+	
+	<!-- 第一步定时任务执行类配置 
+	<bean id="complexJobDetail"    class="org.springframework.scheduling.quartz.JobDetailFactoryBean">  
+        <property name="jobClass" value="com.service.timetask.ScheJob_DeductMoeny" />  
+        <property name="jobDataMap">  
+            <map>  
+                <entry key="deductMoney" value-ref="deductMoney" />  
+            </map>  
+        </property>  
+        <property name="durability" value="true" />  
+    </bean> -->
+     <!--第二步 定时任务执行时间间隔配置 
+    <bean id="cronTrigger"  class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">  
+        <property name="jobDetail" ref="complexJobDetail" />  
+        <property name="cronExpression" value="0/5 * * * * ? " />  5秒执行一次
+    </bean>-->
+    <!-- 第三步，将执行任务加入计划执行列表中
+    <bean  class="org.springframework.scheduling.quartz.SchedulerFactoryBean">  
+        <property name="jobDetails">  
+            <list>  
+                <ref bean="complexJobDetail" />  
+            </list>  
+        </property>  
+        <property name="triggers">  
+            <list>  
+                                 注释后触发器不执行
+             <ref bean="cronTrigger" /> 
+            </list>  
+        </property>  
+    </bean>  
+     -->
+</beans>

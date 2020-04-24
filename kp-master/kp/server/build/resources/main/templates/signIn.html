@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!-- saved from url=(0052)https://getbootstrap.com/docs/4.3/examples/sign-in/? -->
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>SignIn</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/sign-in/">
+    <!-- Bootstrap core CSS -->
+    <link th:href="@{/css/bootstrap.min.css}" rel="stylesheet"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
+    <!-- Custom styles for this template -->
+    <link th:href="@{/css/signin.css}" rel="stylesheet">
+
+
+    <!--js文件
+        注意： 1. jquery版本不匹配将不能使用
+              2.  thymeleaf引入js文件时，script标签要成对出现<script></script>，否则将会出现问题
+    -->
+    <script type="text/javascript" th:src="@{/script/jquery-3.4.1.min.js}"></script>
+
+    <script type="text/javascript">
+
+    </script>
+
+</head>
+<body class="text-center">
+<form class="form-signin" action="/login" method="post">
+    <img class="mb-4" th:src="@{/svg/bootstrap-solid.svg}" alt="" width="72" height="72">
+    <h1 class="h3 mb-3 font-weight-normal" th:text="#{signIn.tip}"></h1>
+    <!--sr-only:方便残障人士浏览网页-->
+    <label for="inputUsername" class="sr-only" th:text="#{signIn.username}"></label>
+    <!--
+        required: 必须的，如果未填写值，则弹出提示
+        autofocus：页面加载后，自动获取焦点，也就是光标会移动到输入区
+    -->
+    <input type="text" id="inputUsername" name="username" class="form-control" th:placeholder="#{signIn.username}"
+           required="" autofocus="">
+    <label for="inputPassword" class="sr-only" th:text="#{signIn.password}"></label>
+    <input type="password" id="inputPassword" name="password" class="form-control" th:placeholder="#{signIn.password}"
+           required="">
+    <div class="checkbox mb-3">
+        <label>
+            <input type="checkbox" value="remember-me"> [[#{signIn.remeberme}]]
+        </label>
+    </div>
+    <button class="btn btn-lg btn-primary btn-block" type="submit" th:text="#{signIn.loginbtn}"></button>
+    <p class="mt-5 mb-3 text-muted">© 2017-2019</p>
+    <a class="btn btn-sm change-language" th:href="@{/signIn(l=zh_CN)}">中文</a>
+    <a class="btn btn-sm change-language" th:href="@{/signIn(l=en_US)}">English</a>
+</form>
+
+</body>
+</html>

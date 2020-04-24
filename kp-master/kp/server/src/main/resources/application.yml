@@ -1,0 +1,30 @@
+#server
+server:
+  port: 8080
+  servlet:
+    context-path: /es7
+
+# spring security config
+spring:
+  security:
+    user:
+      name: wlp
+      password:
+
+
+# datasource
+  datasource:
+#com.mysql.jdbc.Driver 旧版，已弃用
+#com.mysql.cj.jdbc.Driver 新版需配置时区、是否SSL连接serverTimezone=UTC&useSSL=false
+    driver-class-name: com.mysql.cj.jdbc.Driver #
+    url: jdbc:mysql://localhost:3306/knowledgepower?useUnicode=true&characterEncoding=utf-8&serverTimezone=UTC&useSSL=false
+    username: root
+    password:
+  messages:
+#国际化,注意basename=路径 + basename.properties文件名
+    basename: i18n.signin.signin
+
+#mybatis
+mybatis:
+  mapper-locations: com/wlp/knowledgepower/mapping/*.xml
+  type-aliases-package: com.wlp.knowledgepower.model

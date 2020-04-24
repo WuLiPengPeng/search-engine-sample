@@ -1,0 +1,1099 @@
+2019-06-19 11:43:08.693 ERROR (main) [   ] o.a.s.u.StartupLoggingUtils Missing Java Option solr.log.dir. Logging may be missing or incomplete.
+2019-06-19 11:43:08.700 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
+2019-06-19 11:43:08.716 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 7.7.2
+2019-06-19 11:43:08.717 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port null
+2019-06-19 11:43:08.717 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: null
+2019-06-19 11:43:08.745 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2019-06-19T03:43:08.718Z
+2019-06-19 11:43:08.803 INFO  (main) [   ] o.a.s.c.SolrResourceLoader Using JNDI solr.home: /opt/solrServer/solr/solrhome
+2019-06-19 11:43:08.809 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from /opt/solrServer/solr/solrhome/solr.xml
+2019-06-19 11:43:08.959 INFO  (main) [   ] o.a.s.c.SolrXmlConfig MBean server found: com.sun.jmx.mbeanserver.JmxMBeanServer@5f5a92bb, but no JMX reporters were configured - adding default JMX reporter.
+2019-06-19 11:43:09.882 INFO  (main) [   ] o.a.s.h.c.HttpShardHandlerFactory Host whitelist initialized: WhitelistHostChecker [whitelistHosts=null, whitelistHostCheckingEnabled=true]
+2019-06-19 11:43:10.729 INFO  (main) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient cache for 2147483647 transient cores
+2019-06-19 11:43:10.732 INFO  (main) [   ] o.a.s.h.a.MetricsHistoryHandler No .system collection, keeping metrics history in memory.
+2019-06-19 11:43:10.950 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.node' (registry 'solr.node') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@5f5a92bb
+2019-06-19 11:43:10.951 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jvm' (registry 'solr.jvm') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@5f5a92bb
+2019-06-19 11:43:10.951 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jetty' (registry 'solr.jetty') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@5f5a92bb
+2019-06-19 11:43:11.185 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 1 core definitions underneath /opt/solrServer/solr/solrhome
+2019-06-19 11:43:11.189 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [testcore01]
+2019-06-19 11:43:11.287 INFO  (coreLoadExecutor-9-thread-1) [   x:testcore01] o.a.s.c.SolrResourceLoader [null] Added 3 libs to classloader, from paths: [/opt/solrServer/solr/solrhome/testcore01/lib]
+2019-06-19 11:43:12.101 WARN  (coreLoadExecutor-9-thread-1) [   x:testcore01] o.a.s.c.SolrConfig Couldn't add files from /opt/solrServer/solr/solrhome/testcore01/../../../../contrib/extraction/lib filtered by .*\.jar to classpath: /opt/solrServer/solr/solrhome/testcore01/../../../../contrib/extraction/lib
+2019-06-19 11:43:12.101 WARN  (coreLoadExecutor-9-thread-1) [   x:testcore01] o.a.s.c.SolrConfig Couldn't add files from /opt/solrServer/solr/solrhome/testcore01/../../../../dist filtered by solr-cell-\d.*\.jar to classpath: /opt/solrServer/solr/solrhome/testcore01/../../../../dist
+2019-06-19 11:43:12.102 WARN  (coreLoadExecutor-9-thread-1) [   x:testcore01] o.a.s.c.SolrConfig Couldn't add files from /opt/solrServer/solr/solrhome/testcore01/../../../../contrib/clustering/lib filtered by .*\.jar to classpath: /opt/solrServer/solr/solrhome/testcore01/../../../../contrib/clustering/lib
+2019-06-19 11:43:12.102 WARN  (coreLoadExecutor-9-thread-1) [   x:testcore01] o.a.s.c.SolrConfig Couldn't add files from /opt/solrServer/solr/solrhome/testcore01/../../../../dist filtered by solr-clustering-\d.*\.jar to classpath: /opt/solrServer/solr/solrhome/testcore01/../../../../dist
+2019-06-19 11:43:12.102 WARN  (coreLoadExecutor-9-thread-1) [   x:testcore01] o.a.s.c.SolrConfig Couldn't add files from /opt/solrServer/solr/solrhome/testcore01/../../../../contrib/langid/lib filtered by .*\.jar to classpath: /opt/solrServer/solr/solrhome/testcore01/../../../../contrib/langid/lib
+2019-06-19 11:43:12.144 WARN  (coreLoadExecutor-9-thread-1) [   x:testcore01] o.a.s.c.SolrConfig Couldn't add files from /opt/solrServer/solr/solrhome/testcore01/../../../../dist filtered by solr-langid-\d.*\.jar to classpath: /opt/solrServer/solr/solrhome/testcore01/../../../../dist
+2019-06-19 11:43:12.159 WARN  (coreLoadExecutor-9-thread-1) [   x:testcore01] o.a.s.c.SolrConfig Couldn't add files from /opt/solrServer/solr/solrhome/testcore01/../../../../contrib/velocity/lib filtered by .*\.jar to classpath: /opt/solrServer/solr/solrhome/testcore01/../../../../contrib/velocity/lib
+2019-06-19 11:43:12.160 WARN  (coreLoadExecutor-9-thread-1) [   x:testcore01] o.a.s.c.SolrConfig Couldn't add files from /opt/solrServer/solr/solrhome/testcore01/../../../../dist filtered by solr-velocity-\d.*\.jar to classpath: /opt/solrServer/solr/solrhome/testcore01/../../../../dist
+2019-06-19 11:43:12.245 INFO  (coreLoadExecutor-9-thread-1) [   x:testcore01] o.a.s.c.SolrConfig Using Lucene MatchVersion: 7.7.2
+2019-06-19 11:43:12.691 INFO  (coreLoadExecutor-9-thread-1) [   x:testcore01] o.a.s.s.IndexSchema [testcore01] Schema name=default-config
+2019-06-19 11:43:13.074 INFO  (http-nio-8014-exec-2) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1560915794437} status=0 QTime=201
+2019-06-19 11:43:13.205 INFO  (http-nio-8014-exec-3) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1560915794438} status=0 QTime=329
+2019-06-19 11:43:14.176 INFO  (coreLoadExecutor-9-thread-1) [   x:testcore01] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2019-06-19 11:43:14.309 INFO  (coreLoadExecutor-9-thread-1) [   x:testcore01] o.a.s.c.CoreContainer Creating SolrCore 'testcore01' using configuration from instancedir /opt/solrServer/solr/solrhome/testcore01, trusted=true
+2019-06-19 11:43:14.322 INFO  (coreLoadExecutor-9-thread-1) [   x:testcore01] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.testcore01' (registry 'solr.core.testcore01') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@5f5a92bb
+2019-06-19 11:43:14.386 INFO  (coreLoadExecutor-9-thread-1) [   x:testcore01] o.a.s.c.SolrCore [[testcore01] ] Opening new SolrCore at [/opt/solrServer/solr/solrhome/testcore01], dataDir=[/opt/solrServer/solr/solrhome/testcore01/data/]
+2019-06-19 11:43:14.500 INFO  (coreLoadExecutor-9-thread-1) [   x:testcore01] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2019-06-19 11:43:15.666 INFO  (coreLoadExecutor-9-thread-1) [   x:testcore01] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2019-06-19 11:43:15.666 INFO  (coreLoadExecutor-9-thread-1) [   x:testcore01] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2019-06-19 11:43:15.706 INFO  (coreLoadExecutor-9-thread-1) [   x:testcore01] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2019-06-19 11:43:15.711 INFO  (coreLoadExecutor-9-thread-1) [   x:testcore01] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2019-06-19 11:43:15.852 INFO  (coreLoadExecutor-9-thread-1) [   x:testcore01] o.a.s.s.SolrIndexSearcher Opening [Searcher@5c341e30[testcore01] main]
+2019-06-19 11:43:15.865 INFO  (coreLoadExecutor-9-thread-1) [   x:testcore01] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /opt/solrServer/solr/solrhome/testcore01/conf
+2019-06-19 11:43:15.885 INFO  (coreLoadExecutor-9-thread-1) [   x:testcore01] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2019-06-19 11:43:15.895 INFO  (coreLoadExecutor-9-thread-1) [   x:testcore01] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2019-06-19 11:43:15.918 INFO  (coreLoadExecutor-9-thread-1) [   x:testcore01] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
+2019-06-19 11:43:15.968 INFO  (searcherExecutor-10-thread-1-processing-x:testcore01) [   x:testcore01] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@5c341e30[testcore01] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_1(7.7.2):C3:[diagnostics={java.runtime.version=1.8.0_111-b14, java.vendor=Oracle Corporation, java.version=1.8.0_111, java.vm.version=25.111-b14, lucene.version=7.7.2, os=Linux, os.arch=amd64, os.version=3.10.0-514.26.2.el7.x86_64, source=flush, timestamp=1560915689339}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2019-06-19 11:43:15.969 INFO  (searcherExecutor-10-thread-1-processing-x:testcore01) [   x:testcore01] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2019-06-19 11:43:15.969 INFO  (searcherExecutor-10-thread-1-processing-x:testcore01) [   x:testcore01] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2019-06-19 11:43:15.993 INFO  (searcherExecutor-10-thread-1-processing-x:testcore01) [   x:testcore01] o.a.s.c.SolrCore [testcore01] Registered new searcher Searcher@5c341e30[testcore01] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_1(7.7.2):C3:[diagnostics={java.runtime.version=1.8.0_111-b14, java.vendor=Oracle Corporation, java.version=1.8.0_111, java.vm.version=25.111-b14, lucene.version=7.7.2, os=Linux, os.arch=amd64, os.version=3.10.0-514.26.2.el7.x86_64, source=flush, timestamp=1560915689339}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2019-06-19 11:43:19.687 INFO  (http-nio-8014-exec-8) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1560915801329} status=0 QTime=0
+2019-06-19 11:43:19.696 INFO  (http-nio-8014-exec-10) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1560915801410} status=0 QTime=2
+2019-06-19 11:43:19.706 INFO  (http-nio-8014-exec-9) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1560915801329} status=0 QTime=16
+2019-06-19 11:43:19.746 INFO  (http-nio-8014-exec-1) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=show-config&_=1560915801410} status=0 QTime=10
+2019-06-19 11:43:19.817 INFO  (http-nio-8014-exec-6) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1560915801410} status=0 QTime=0
+2019-06-19 11:43:26.949 INFO  (http-nio-8014-exec-4) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1560915801329} status=0 QTime=0
+2019-06-19 11:43:26.986 INFO  (http-nio-8014-exec-2) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1560915801329} status=0 QTime=34
+2019-06-19 11:43:29.133 INFO  (http-nio-8014-exec-3) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=*:*&_=1560915808635} hits=3 status=0 QTime=39
+2019-06-19 11:43:34.155 INFO  (http-nio-8014-exec-8) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1560915801329} status=0 QTime=0
+2019-06-19 11:43:34.157 INFO  (http-nio-8014-exec-10) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1560915801410} status=0 QTime=0
+2019-06-19 11:43:34.187 INFO  (http-nio-8014-exec-10) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1560915801329} status=0 QTime=27
+2019-06-19 11:43:34.254 INFO  (http-nio-8014-exec-5) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1560915801329} status=0 QTime=0
+2019-06-19 11:43:34.258 INFO  (http-nio-8014-exec-1) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1560915801410} status=0 QTime=0
+2019-06-19 11:43:34.263 INFO  (http-nio-8014-exec-4) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=show-config&_=1560915801410} status=0 QTime=0
+2019-06-19 11:43:34.283 INFO  (http-nio-8014-exec-1) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1560915801329} status=0 QTime=22
+2019-06-19 11:43:34.324 INFO  (http-nio-8014-exec-2) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1560915801410} status=0 QTime=0
+2019-06-19 11:43:40.751 INFO  (http-nio-8014-exec-3) [   x:testcore01] o.a.s.h.d.DataImporter Loading DIH Configuration: data-config.xml
+2019-06-19 11:43:40.778 INFO  (http-nio-8014-exec-3) [   x:testcore01] o.a.s.h.d.DataImporter Data Configuration loaded successfully
+2019-06-19 11:43:40.804 INFO  (http-nio-8014-exec-3) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/dataimport params={core=testcore01&indent=on&commit=true&name=dataimport&clean=true&wt=json&command=full-import&entity=product&_=1560915801410&verbose=false} status=0 QTime=54
+2019-06-19 11:43:40.808 INFO  (Thread-7) [   ] o.a.s.h.d.DataImporter Starting Full Import
+2019-06-19 11:43:40.827 WARN  (Thread-7) [   ] o.a.s.h.d.SimplePropertiesWriter Unable to read: dataimport.properties
+2019-06-19 11:43:40.861 INFO  (http-nio-8014-exec-7) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1560915801410} status=0 QTime=2
+2019-06-19 11:43:40.975 INFO  (Thread-7) [   ] o.a.s.s.SolrIndexSearcher Opening [Searcher@38cabc1b[testcore01] realtime]
+2019-06-19 11:43:41.033 INFO  (Thread-7) [   ] o.a.s.h.d.JdbcDataSource Creating a connection for entity product with URL: jdbc:mysql://localhost:3306/lucene
+2019-06-19 11:43:41.677 INFO  (Thread-7) [   ] o.a.s.h.d.JdbcDataSource Time taken for getConnection(): 644
+2019-06-19 11:43:46.447 INFO  (Thread-7) [   ] o.a.s.h.d.DocBuilder Import completed successfully
+2019-06-19 11:43:46.448 INFO  (Thread-7) [   ] o.a.s.u.DirectUpdateHandler2 start commit{_version_=1636738873633538048,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2019-06-19 11:43:46.448 INFO  (Thread-7) [   ] o.a.s.u.SolrIndexWriter Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@2f9ccb1 commitCommandVersion:1636738873633538048
+2019-06-19 11:43:46.554 INFO  (Thread-7) [   ] o.a.s.s.SolrIndexSearcher Opening [Searcher@778004a6[testcore01] main]
+2019-06-19 11:43:46.559 INFO  (Thread-7) [   ] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2019-06-19 11:43:46.561 INFO  (searcherExecutor-10-thread-1) [   ] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@778004a6[testcore01] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_2(7.7.2):C3:[diagnostics={os=Linux, java.vendor=Oracle Corporation, java.version=1.8.0_111, java.vm.version=25.111-b14, lucene.version=7.7.2, os.arch=amd64, java.runtime.version=1.8.0_111-b14, source=flush, os.version=3.10.0-514.26.2.el7.x86_64, timestamp=1560915826499}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2019-06-19 11:43:46.561 INFO  (searcherExecutor-10-thread-1) [   ] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2019-06-19 11:43:46.566 INFO  (searcherExecutor-10-thread-1) [   ] o.a.s.c.SolrCore [testcore01] Registered new searcher Searcher@778004a6[testcore01] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_2(7.7.2):C3:[diagnostics={os=Linux, java.vendor=Oracle Corporation, java.version=1.8.0_111, java.vm.version=25.111-b14, lucene.version=7.7.2, os.arch=amd64, java.runtime.version=1.8.0_111-b14, source=flush, os.version=3.10.0-514.26.2.el7.x86_64, timestamp=1560915826499}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2019-06-19 11:43:46.593 WARN  (Thread-7) [   ] o.a.s.h.d.SimplePropertiesWriter Unable to read: dataimport.properties
+2019-06-19 11:43:46.593 INFO  (Thread-7) [   ] o.a.s.h.d.SimplePropertiesWriter Wrote last indexed time to dataimport.properties
+2019-06-19 11:43:46.593 INFO  (Thread-7) [   ] o.a.s.h.d.DocBuilder Time taken = 0:0:5.758
+2019-06-19 11:43:46.593 INFO  (Thread-7) [   ] o.a.s.u.p.LogUpdateProcessorFactory [testcore01]  webapp=/solr path=/dataimport params={core=testcore01&indent=on&commit=true&name=dataimport&clean=true&wt=json&command=full-import&entity=product&_=1560915801410&verbose=false} status=0 QTime=54{deleteByQuery=*:* (-1636738867811844096),add=[1 (1636738868647559168), 2 (1636738873630392320), 3 (1636738873631440896)],commit=} 0 5844
+2019-06-19 11:45:29.719 INFO  (http-nio-8014-exec-6) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1560915801329} status=0 QTime=0
+2019-06-19 11:45:29.744 INFO  (http-nio-8014-exec-4) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1560915801329} status=0 QTime=21
+2019-06-19 11:45:32.507 INFO  (http-nio-8014-exec-1) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=*:*&_=1560915808635} hits=3 status=0 QTime=0
+2019-06-19 11:45:54.025 INFO  (http-nio-8014-exec-8) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1560915801329} status=0 QTime=0
+2019-06-19 11:45:54.027 INFO  (http-nio-8014-exec-8) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1560915801410} status=0 QTime=0
+2019-06-19 11:45:54.046 INFO  (http-nio-8014-exec-7) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1560915801329} status=0 QTime=30
+2019-06-19 11:45:54.133 INFO  (http-nio-8014-exec-10) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1560915801329} status=0 QTime=0
+2019-06-19 11:45:54.137 INFO  (http-nio-8014-exec-6) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1560915801410} status=0 QTime=0
+2019-06-19 11:45:54.157 INFO  (http-nio-8014-exec-5) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1560915801329} status=0 QTime=21
+2019-06-19 11:45:54.175 INFO  (http-nio-8014-exec-4) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=show-config&_=1560915801410} status=0 QTime=0
+2019-06-19 11:45:54.222 INFO  (http-nio-8014-exec-1) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1560915801410} status=0 QTime=0
+2019-06-19 11:46:08.961 INFO  (http-nio-8014-exec-3) [   x:testcore01] o.a.s.h.d.DataImporter Loading DIH Configuration: data-config.xml
+2019-06-19 11:46:08.971 INFO  (http-nio-8014-exec-3) [   x:testcore01] o.a.s.h.d.DataImporter Data Configuration loaded successfully
+2019-06-19 11:46:08.973 INFO  (http-nio-8014-exec-3) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/dataimport params={core=testcore01&indent=on&commit=true&name=dataimport&clean=true&wt=json&command=full-import&entity=product&_=1560915801410&verbose=false} status=0 QTime=12
+2019-06-19 11:46:08.976 INFO  (Thread-8) [   ] o.a.s.h.d.DataImporter Starting Full Import
+2019-06-19 11:46:08.980 INFO  (Thread-8) [   ] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
+2019-06-19 11:46:08.983 INFO  (Thread-8) [   ] o.a.s.s.SolrIndexSearcher Opening [Searcher@b989a10[testcore01] realtime]
+2019-06-19 11:46:08.991 INFO  (Thread-8) [   ] o.a.s.h.d.JdbcDataSource Creating a connection for entity product with URL: jdbc:mysql://localhost:3306/lucene
+2019-06-19 11:46:09.002 INFO  (Thread-8) [   ] o.a.s.h.d.JdbcDataSource Time taken for getConnection(): 11
+2019-06-19 11:46:09.013 INFO  (Thread-8) [   ] o.a.s.h.d.DocBuilder Import completed successfully
+2019-06-19 11:46:09.013 INFO  (Thread-8) [   ] o.a.s.u.DirectUpdateHandler2 start commit{_version_=1636739023123775488,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2019-06-19 11:46:09.013 INFO  (Thread-8) [   ] o.a.s.u.SolrIndexWriter Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@2f9ccb1 commitCommandVersion:1636739023123775488
+2019-06-19 11:46:09.024 INFO  (http-nio-8014-exec-8) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1560915801410} status=0 QTime=0
+2019-06-19 11:46:09.067 INFO  (Thread-8) [   ] o.a.s.s.SolrIndexSearcher Opening [Searcher@66105cd9[testcore01] main]
+2019-06-19 11:46:09.068 INFO  (Thread-8) [   ] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2019-06-19 11:46:09.068 INFO  (searcherExecutor-10-thread-1) [   ] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@66105cd9[testcore01] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_3(7.7.2):C6:[diagnostics={os=Linux, java.vendor=Oracle Corporation, java.version=1.8.0_111, java.vm.version=25.111-b14, lucene.version=7.7.2, os.arch=amd64, java.runtime.version=1.8.0_111-b14, source=flush, os.version=3.10.0-514.26.2.el7.x86_64, timestamp=1560915969021}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2019-06-19 11:46:09.068 INFO  (searcherExecutor-10-thread-1) [   ] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2019-06-19 11:46:09.073 INFO  (searcherExecutor-10-thread-1) [   ] o.a.s.c.SolrCore [testcore01] Registered new searcher Searcher@66105cd9[testcore01] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_3(7.7.2):C6:[diagnostics={os=Linux, java.vendor=Oracle Corporation, java.version=1.8.0_111, java.vm.version=25.111-b14, lucene.version=7.7.2, os.arch=amd64, java.runtime.version=1.8.0_111-b14, source=flush, os.version=3.10.0-514.26.2.el7.x86_64, timestamp=1560915969021}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2019-06-19 11:46:09.107 INFO  (Thread-8) [   ] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
+2019-06-19 11:46:09.108 INFO  (Thread-8) [   ] o.a.s.h.d.SimplePropertiesWriter Wrote last indexed time to dataimport.properties
+2019-06-19 11:46:09.108 INFO  (Thread-8) [   ] o.a.s.h.d.DocBuilder Time taken = 0:0:0.127
+2019-06-19 11:46:09.108 INFO  (Thread-8) [   ] o.a.s.u.p.LogUpdateProcessorFactory [testcore01]  webapp=/solr path=/dataimport params={core=testcore01&indent=on&commit=true&name=dataimport&clean=true&wt=json&command=full-import&entity=product&_=1560915801410&verbose=false} status=0 QTime=12{deleteByQuery=*:* (-1636739023090221056),add=[1 (1636739023114338304), 2 (1636739023119581184), 3 (1636739023120629760), 4 (1636739023121678336), 5 (1636739023121678337), 6 (1636739023122726912)],commit=} 0 147
+2019-06-19 11:46:19.201 INFO  (http-nio-8014-exec-10) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1560915801410} status=0 QTime=0
+2019-06-19 11:46:46.617 INFO  (http-nio-8014-exec-5) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1560915801329} status=0 QTime=0
+2019-06-19 11:46:46.639 INFO  (http-nio-8014-exec-4) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1560915801329} status=0 QTime=16
+2019-06-19 11:46:47.792 INFO  (http-nio-8014-exec-1) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=*:*&_=1560915808635} hits=6 status=0 QTime=0
+2019-06-19 11:47:06.007 INFO  (http-nio-8014-exec-3) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1560915801329} status=0 QTime=0
+2019-06-19 11:47:06.030 INFO  (http-nio-8014-exec-8) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1560915801329} status=0 QTime=21
+2019-06-19 11:47:06.052 INFO  (http-nio-8014-exec-9) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1560916027740} status=0 QTime=7
+2019-06-19 11:47:11.176 INFO  (http-nio-8014-exec-7) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1560915801329} status=0 QTime=0
+2019-06-19 11:47:11.192 INFO  (http-nio-8014-exec-10) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1560915801329} status=0 QTime=14
+2019-06-19 11:47:34.725 INFO  (http-nio-8014-exec-1) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=*:*&_=1560915808635} hits=6 status=0 QTime=0
+2019-06-19 11:49:25.224 INFO  (http-nio-8014-exec-3) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1560915801329} status=0 QTime=0
+2019-06-19 11:49:25.235 INFO  (http-nio-8014-exec-9) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1560915801410} status=0 QTime=0
+2019-06-19 11:49:25.250 INFO  (http-nio-8014-exec-8) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1560915801329} status=0 QTime=24
+2019-06-19 11:49:25.328 INFO  (http-nio-8014-exec-7) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1560915801329} status=0 QTime=0
+2019-06-19 11:49:25.335 INFO  (http-nio-8014-exec-6) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1560915801410} status=0 QTime=0
+2019-06-19 11:49:25.341 INFO  (http-nio-8014-exec-10) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1560915801329} status=0 QTime=9
+2019-06-19 11:49:25.398 INFO  (http-nio-8014-exec-5) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=show-config&_=1560915801410} status=0 QTime=0
+2019-06-19 11:49:25.450 INFO  (http-nio-8014-exec-4) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1560915801410} status=0 QTime=0
+2019-06-19 11:49:30.997 INFO  (http-nio-8014-exec-1) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1560915801410} status=0 QTime=0
+2019-06-19 11:49:33.003 INFO  (http-nio-8014-exec-2) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1560915801410} status=0 QTime=0
+2019-06-19 11:49:34.054 INFO  (http-nio-8014-exec-3) [   x:testcore01] o.a.s.h.d.DataImporter Loading DIH Configuration: data-config.xml
+2019-06-19 11:49:34.062 INFO  (http-nio-8014-exec-3) [   x:testcore01] o.a.s.h.d.DataImporter Data Configuration loaded successfully
+2019-06-19 11:49:34.073 INFO  (http-nio-8014-exec-3) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/dataimport params={core=testcore01&indent=on&commit=true&name=dataimport&clean=true&wt=json&command=full-import&_=1560915801410&verbose=false} status=0 QTime=19
+2019-06-19 11:49:34.074 INFO  (Thread-9) [   ] o.a.s.h.d.DataImporter Starting Full Import
+2019-06-19 11:49:34.078 INFO  (Thread-9) [   ] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
+2019-06-19 11:49:34.082 INFO  (Thread-9) [   ] o.a.s.s.SolrIndexSearcher Opening [Searcher@28a3aa06[testcore01] realtime]
+2019-06-19 11:49:34.086 INFO  (Thread-9) [   ] o.a.s.h.d.JdbcDataSource Creating a connection for entity product with URL: jdbc:mysql://localhost:3306/lucene
+2019-06-19 11:49:34.095 INFO  (Thread-9) [   ] o.a.s.h.d.JdbcDataSource Time taken for getConnection(): 8
+2019-06-19 11:49:34.115 INFO  (Thread-9) [   ] o.a.s.h.d.DocBuilder Import completed successfully
+2019-06-19 11:49:34.115 INFO  (Thread-9) [   ] o.a.s.u.DirectUpdateHandler2 start commit{_version_=1636739238188810240,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2019-06-19 11:49:34.121 INFO  (Thread-9) [   ] o.a.s.u.SolrIndexWriter Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@2f9ccb1 commitCommandVersion:1636739238188810240
+2019-06-19 11:49:34.126 INFO  (http-nio-8014-exec-9) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1560915801410} status=0 QTime=5
+2019-06-19 11:49:34.177 INFO  (Thread-9) [   ] o.a.s.s.SolrIndexSearcher Opening [Searcher@17511eba[testcore01] main]
+2019-06-19 11:49:34.178 INFO  (searcherExecutor-10-thread-1) [   ] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@17511eba[testcore01] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_4(7.7.2):C6:[diagnostics={os=Linux, java.vendor=Oracle Corporation, java.version=1.8.0_111, java.vm.version=25.111-b14, lucene.version=7.7.2, os.arch=amd64, java.runtime.version=1.8.0_111-b14, source=flush, os.version=3.10.0-514.26.2.el7.x86_64, timestamp=1560916174125}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2019-06-19 11:49:34.178 INFO  (searcherExecutor-10-thread-1) [   ] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2019-06-19 11:49:34.183 INFO  (searcherExecutor-10-thread-1) [   ] o.a.s.c.SolrCore [testcore01] Registered new searcher Searcher@17511eba[testcore01] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_4(7.7.2):C6:[diagnostics={os=Linux, java.vendor=Oracle Corporation, java.version=1.8.0_111, java.vm.version=25.111-b14, lucene.version=7.7.2, os.arch=amd64, java.runtime.version=1.8.0_111-b14, source=flush, os.version=3.10.0-514.26.2.el7.x86_64, timestamp=1560916174125}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2019-06-19 11:49:34.184 INFO  (Thread-9) [   ] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2019-06-19 11:49:34.217 INFO  (Thread-9) [   ] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
+2019-06-19 11:49:34.218 INFO  (Thread-9) [   ] o.a.s.h.d.SimplePropertiesWriter Wrote last indexed time to dataimport.properties
+2019-06-19 11:49:34.218 INFO  (Thread-9) [   ] o.a.s.h.d.DocBuilder Time taken = 0:0:0.139
+2019-06-19 11:49:34.218 INFO  (Thread-9) [   ] o.a.s.u.p.LogUpdateProcessorFactory [testcore01]  webapp=/solr path=/dataimport params={core=testcore01&indent=on&commit=true&name=dataimport&clean=true&wt=json&command=full-import&_=1560915801410&verbose=false} status=0 QTime=19{deleteByQuery=*:* (-1636739238151061504),add=[1 (1636739238169935872), 2 (1636739238182518784), 3 (1636739238183567360), 4 (1636739238184615936), 5 (1636739238186713088), 6 (1636739238187761664)],commit=} 0 164
+2019-06-19 11:49:35.004 INFO  (http-nio-8014-exec-8) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1560915801410} status=0 QTime=0
+2019-06-19 11:49:37.007 INFO  (http-nio-8014-exec-6) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1560915801410} status=0 QTime=0
+2019-06-19 11:49:39.004 INFO  (http-nio-8014-exec-10) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1560915801410} status=0 QTime=0
+2019-06-19 11:49:41.005 INFO  (http-nio-8014-exec-5) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1560915801410} status=0 QTime=0
+2019-06-19 11:49:41.164 INFO  (http-nio-8014-exec-4) [   x:testcore01] o.a.s.h.d.DataImporter Loading DIH Configuration: data-config.xml
+2019-06-19 11:49:41.167 INFO  (http-nio-8014-exec-4) [   x:testcore01] o.a.s.h.d.DataImporter Data Configuration loaded successfully
+2019-06-19 11:49:41.181 INFO  (http-nio-8014-exec-4) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/dataimport params={core=testcore01&indent=on&commit=true&name=dataimport&clean=true&wt=json&command=full-import&entity=product&_=1560915801410&verbose=false} status=0 QTime=17
+2019-06-19 11:49:41.182 INFO  (Thread-10) [   ] o.a.s.h.d.DataImporter Starting Full Import
+2019-06-19 11:49:41.186 INFO  (Thread-10) [   ] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
+2019-06-19 11:49:41.189 INFO  (Thread-10) [   ] o.a.s.s.SolrIndexSearcher Opening [Searcher@65db0acb[testcore01] realtime]
+2019-06-19 11:49:41.193 INFO  (Thread-10) [   ] o.a.s.h.d.JdbcDataSource Creating a connection for entity product with URL: jdbc:mysql://localhost:3306/lucene
+2019-06-19 11:49:41.215 INFO  (Thread-10) [   ] o.a.s.h.d.JdbcDataSource Time taken for getConnection(): 21
+2019-06-19 11:49:41.225 INFO  (Thread-10) [   ] o.a.s.h.d.DocBuilder Import completed successfully
+2019-06-19 11:49:41.226 INFO  (Thread-10) [   ] o.a.s.u.DirectUpdateHandler2 start commit{_version_=1636739245645234176,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2019-06-19 11:49:41.226 INFO  (Thread-10) [   ] o.a.s.u.SolrIndexWriter Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@2f9ccb1 commitCommandVersion:1636739245645234176
+2019-06-19 11:49:41.230 INFO  (http-nio-8014-exec-1) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1560915801410} status=0 QTime=0
+2019-06-19 11:49:41.282 INFO  (Thread-10) [   ] o.a.s.s.SolrIndexSearcher Opening [Searcher@1098e56e[testcore01] main]
+2019-06-19 11:49:41.283 INFO  (Thread-10) [   ] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2019-06-19 11:49:41.284 INFO  (searcherExecutor-10-thread-1) [   ] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@1098e56e[testcore01] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_5(7.7.2):C6:[diagnostics={os=Linux, java.vendor=Oracle Corporation, java.version=1.8.0_111, java.vm.version=25.111-b14, lucene.version=7.7.2, os.arch=amd64, java.runtime.version=1.8.0_111-b14, source=flush, os.version=3.10.0-514.26.2.el7.x86_64, timestamp=1560916181232}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2019-06-19 11:49:41.285 INFO  (searcherExecutor-10-thread-1) [   ] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2019-06-19 11:49:41.288 INFO  (searcherExecutor-10-thread-1) [   ] o.a.s.c.SolrCore [testcore01] Registered new searcher Searcher@1098e56e[testcore01] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_5(7.7.2):C6:[diagnostics={os=Linux, java.vendor=Oracle Corporation, java.version=1.8.0_111, java.vm.version=25.111-b14, lucene.version=7.7.2, os.arch=amd64, java.runtime.version=1.8.0_111-b14, source=flush, os.version=3.10.0-514.26.2.el7.x86_64, timestamp=1560916181232}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2019-06-19 11:49:41.304 INFO  (Thread-10) [   ] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
+2019-06-19 11:49:41.304 INFO  (Thread-10) [   ] o.a.s.h.d.SimplePropertiesWriter Wrote last indexed time to dataimport.properties
+2019-06-19 11:49:41.304 INFO  (Thread-10) [   ] o.a.s.h.d.DocBuilder Time taken = 0:0:0.117
+2019-06-19 11:49:41.304 INFO  (Thread-10) [   ] o.a.s.u.p.LogUpdateProcessorFactory [testcore01]  webapp=/solr path=/dataimport params={core=testcore01&indent=on&commit=true&name=dataimport&clean=true&wt=json&command=full-import&entity=product&_=1560915801410&verbose=false} status=0 QTime=17{deleteByQuery=*:* (-1636739245604339712),add=[1 (1636739245634748416), 2 (1636739245638942720), 3 (1636739245639991296), 4 (1636739245641039872), 5 (1636739245642088448), 6 (1636739245643137024)],commit=} 0 140
+2019-06-19 11:49:43.004 INFO  (http-nio-8014-exec-2) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1560915801410} status=0 QTime=0
+2019-06-19 11:49:45.004 INFO  (http-nio-8014-exec-3) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1560915801410} status=0 QTime=0
+2019-06-19 11:49:47.002 INFO  (http-nio-8014-exec-7) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1560915801410} status=0 QTime=0
+2019-06-19 11:49:48.529 INFO  (http-nio-8014-exec-6) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1560915801329} status=0 QTime=0
+2019-06-19 11:49:48.582 INFO  (http-nio-8014-exec-10) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1560915801329} status=0 QTime=14
+2019-06-19 11:49:49.918 INFO  (http-nio-8014-exec-5) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=*:*&_=1560915808635} hits=6 status=0 QTime=1
+2019-06-19 11:52:40.122 INFO  (http-nio-8014-exec-2) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1560915801329} status=0 QTime=0
+2019-06-19 11:52:40.140 INFO  (http-nio-8014-exec-9) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1560915801410} status=0 QTime=0
+2019-06-19 11:52:40.178 INFO  (http-nio-8014-exec-3) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1560915801329} status=0 QTime=48
+2019-06-19 11:52:40.218 INFO  (http-nio-8014-exec-8) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1560915801329} status=0 QTime=0
+2019-06-19 11:52:40.223 INFO  (http-nio-8014-exec-7) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1560915801410} status=0 QTime=0
+2019-06-19 11:52:40.230 INFO  (http-nio-8014-exec-6) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=show-config&_=1560915801410} status=0 QTime=0
+2019-06-19 11:52:40.274 INFO  (http-nio-8014-exec-10) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1560915801329} status=0 QTime=11
+2019-06-19 11:52:40.285 INFO  (http-nio-8014-exec-5) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1560915801410} status=0 QTime=0
+2019-06-19 11:52:46.649 INFO  (http-nio-8014-exec-4) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1560915801410} status=0 QTime=0
+2019-06-19 11:52:47.474 INFO  (http-nio-8014-exec-1) [   x:testcore01] o.a.s.h.d.DataImporter Loading DIH Configuration: data-config.xml
+2019-06-19 11:52:47.482 INFO  (http-nio-8014-exec-1) [   x:testcore01] o.a.s.h.d.DataImporter Data Configuration loaded successfully
+2019-06-19 11:52:47.486 INFO  (http-nio-8014-exec-1) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/dataimport params={core=testcore01&indent=on&commit=true&name=dataimport&clean=true&wt=json&command=full-import&entity=product&_=1560915801410&verbose=false} status=0 QTime=13
+2019-06-19 11:52:47.488 INFO  (Thread-11) [   ] o.a.s.h.d.DataImporter Starting Full Import
+2019-06-19 11:52:47.492 INFO  (Thread-11) [   ] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
+2019-06-19 11:52:47.495 INFO  (Thread-11) [   ] o.a.s.s.SolrIndexSearcher Opening [Searcher@5f679cdf[testcore01] realtime]
+2019-06-19 11:52:47.499 INFO  (Thread-11) [   ] o.a.s.h.d.JdbcDataSource Creating a connection for entity product with URL: jdbc:mysql://localhost:3306/lucene
+2019-06-19 11:52:47.520 INFO  (Thread-11) [   ] o.a.s.h.d.JdbcDataSource Time taken for getConnection(): 20
+2019-06-19 11:52:47.530 INFO  (Thread-11) [   ] o.a.s.h.d.DocBuilder Import completed successfully
+2019-06-19 11:52:47.530 INFO  (Thread-11) [   ] o.a.s.u.DirectUpdateHandler2 start commit{_version_=1636739440999137280,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2019-06-19 11:52:47.530 INFO  (Thread-11) [   ] o.a.s.u.SolrIndexWriter Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@2f9ccb1 commitCommandVersion:1636739440999137280
+2019-06-19 11:52:47.540 INFO  (http-nio-8014-exec-2) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1560915801410} status=0 QTime=0
+2019-06-19 11:52:47.599 INFO  (Thread-11) [   ] o.a.s.s.SolrIndexSearcher Opening [Searcher@5f46a7b3[testcore01] main]
+2019-06-19 11:52:47.600 INFO  (Thread-11) [   ] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2019-06-19 11:52:47.600 INFO  (searcherExecutor-10-thread-1) [   ] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@5f46a7b3[testcore01] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_6(7.7.2):C6:[diagnostics={os=Linux, java.vendor=Oracle Corporation, java.version=1.8.0_111, java.vm.version=25.111-b14, lucene.version=7.7.2, os.arch=amd64, java.runtime.version=1.8.0_111-b14, source=flush, os.version=3.10.0-514.26.2.el7.x86_64, timestamp=1560916367533}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2019-06-19 11:52:47.600 INFO  (searcherExecutor-10-thread-1) [   ] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2019-06-19 11:52:47.603 INFO  (searcherExecutor-10-thread-1) [   ] o.a.s.c.SolrCore [testcore01] Registered new searcher Searcher@5f46a7b3[testcore01] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_6(7.7.2):C6:[diagnostics={os=Linux, java.vendor=Oracle Corporation, java.version=1.8.0_111, java.vm.version=25.111-b14, lucene.version=7.7.2, os.arch=amd64, java.runtime.version=1.8.0_111-b14, source=flush, os.version=3.10.0-514.26.2.el7.x86_64, timestamp=1560916367533}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2019-06-19 11:52:47.652 INFO  (Thread-11) [   ] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
+2019-06-19 11:52:47.652 INFO  (Thread-11) [   ] o.a.s.h.d.SimplePropertiesWriter Wrote last indexed time to dataimport.properties
+2019-06-19 11:52:47.652 INFO  (Thread-11) [   ] o.a.s.h.d.DocBuilder Time taken = 0:0:0.160
+2019-06-19 11:52:47.652 INFO  (Thread-11) [   ] o.a.s.u.p.LogUpdateProcessorFactory [testcore01]  webapp=/solr path=/dataimport params={core=testcore01&indent=on&commit=true&name=dataimport&clean=true&wt=json&command=full-import&entity=product&_=1560915801410&verbose=false} status=0 QTime=13{deleteByQuery=*:* (-1636739440959291392),add=[1 (1636739440989700096), 2 (1636739440994942976), 3 (1636739440995991552), 4 (1636739440997040128), 5 (1636739440998088704), 6 (1636739440998088705)],commit=} 0 179
+2019-06-19 11:52:48.652 INFO  (http-nio-8014-exec-9) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1560915801410} status=0 QTime=0
+2019-06-19 11:52:50.654 INFO  (http-nio-8014-exec-8) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1560915801410} status=0 QTime=0
+2019-06-19 11:52:52.652 INFO  (http-nio-8014-exec-7) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1560915801410} status=0 QTime=0
+2019-06-19 11:52:54.652 INFO  (http-nio-8014-exec-6) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1560915801410} status=0 QTime=0
+2019-06-19 11:52:56.656 INFO  (http-nio-8014-exec-10) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1560915801410} status=0 QTime=0
+2019-06-19 11:52:58.653 INFO  (http-nio-8014-exec-5) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1560915801410} status=0 QTime=0
+2019-06-19 11:53:00.657 INFO  (http-nio-8014-exec-4) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1560915801410} status=0 QTime=0
+2019-06-19 11:53:02.579 INFO  (http-nio-8014-exec-3) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1560915801329} status=0 QTime=0
+2019-06-19 11:53:02.631 INFO  (http-nio-8014-exec-8) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1560915801329} status=0 QTime=16
+2019-06-19 11:53:03.697 INFO  (http-nio-8014-exec-7) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=*:*&_=1560915808635} hits=6 status=0 QTime=0
+2019-06-19 14:05:18.420 INFO  (http-nio-8014-exec-3) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=product_name:蓝&_=1560915808635} hits=1 status=0 QTime=20
+2019-06-19 14:05:42.336 INFO  (http-nio-8014-exec-9) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=*:*&_=1560915808635} hits=6 status=0 QTime=0
+2019-06-19 14:10:57.408 INFO  (http-nio-8014-exec-10) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1560915801329} status=0 QTime=0
+2019-06-19 14:10:57.421 INFO  (http-nio-8014-exec-4) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1560915801410} status=0 QTime=0
+2019-06-19 14:10:57.442 INFO  (http-nio-8014-exec-5) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1560915801329} status=0 QTime=31
+2019-06-19 14:10:57.504 INFO  (http-nio-8014-exec-2) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1560915801329} status=0 QTime=0
+2019-06-19 14:10:57.510 INFO  (http-nio-8014-exec-3) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1560915801410} status=0 QTime=0
+2019-06-19 14:10:57.519 INFO  (http-nio-8014-exec-1) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1560915801329} status=0 QTime=13
+2019-06-19 14:10:57.545 INFO  (http-nio-8014-exec-9) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=show-config&_=1560915801410} status=0 QTime=0
+2019-06-19 14:10:57.589 INFO  (http-nio-8014-exec-8) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1560915801410} status=0 QTime=0
+2019-06-19 14:11:00.887 INFO  (http-nio-8014-exec-7) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1560915801410} status=0 QTime=0
+2019-06-19 14:11:02.891 INFO  (http-nio-8014-exec-10) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1560915801410} status=0 QTime=0
+2019-06-19 14:11:03.006 INFO  (http-nio-8014-exec-4) [   x:testcore01] o.a.s.h.d.DataImporter Loading DIH Configuration: data-config.xml
+2019-06-19 14:11:03.014 INFO  (http-nio-8014-exec-4) [   x:testcore01] o.a.s.h.d.DataImporter Data Configuration loaded successfully
+2019-06-19 14:11:03.018 INFO  (http-nio-8014-exec-4) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/dataimport params={core=testcore01&indent=on&commit=true&name=dataimport&clean=true&wt=json&command=full-import&_=1560915801410&verbose=false} status=0 QTime=11
+2019-06-19 14:11:03.020 INFO  (Thread-12) [   ] o.a.s.h.d.DataImporter Starting Full Import
+2019-06-19 14:11:03.024 INFO  (Thread-12) [   ] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
+2019-06-19 14:11:03.028 INFO  (Thread-12) [   ] o.a.s.s.SolrIndexSearcher Opening [Searcher@7d7f1717[testcore01] realtime]
+2019-06-19 14:11:03.033 INFO  (Thread-12) [   ] o.a.s.h.d.JdbcDataSource Creating a connection for entity product with URL: jdbc:mysql://localhost:3306/lucene
+2019-06-19 14:11:03.051 INFO  (Thread-12) [   ] o.a.s.h.d.JdbcDataSource Time taken for getConnection(): 18
+2019-06-19 14:11:03.063 INFO  (Thread-12) [   ] o.a.s.h.d.DocBuilder Import completed successfully
+2019-06-19 14:11:03.063 INFO  (Thread-12) [   ] o.a.s.u.DirectUpdateHandler2 start commit{_version_=1636748139495948288,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2019-06-19 14:11:03.063 INFO  (Thread-12) [   ] o.a.s.u.SolrIndexWriter Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@2f9ccb1 commitCommandVersion:1636748139495948288
+2019-06-19 14:11:03.066 INFO  (http-nio-8014-exec-5) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1560915801410} status=0 QTime=0
+2019-06-19 14:11:03.119 INFO  (Thread-12) [   ] o.a.s.s.SolrIndexSearcher Opening [Searcher@55f2e12[testcore01] main]
+2019-06-19 14:11:03.119 INFO  (Thread-12) [   ] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2019-06-19 14:11:03.122 INFO  (searcherExecutor-10-thread-1) [   ] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@55f2e12[testcore01] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_7(7.7.2):C10:[diagnostics={os=Linux, java.vendor=Oracle Corporation, java.version=1.8.0_111, java.vm.version=25.111-b14, lucene.version=7.7.2, os.arch=amd64, java.runtime.version=1.8.0_111-b14, source=flush, os.version=3.10.0-514.26.2.el7.x86_64, timestamp=1560924663075}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2019-06-19 14:11:03.122 INFO  (searcherExecutor-10-thread-1) [   ] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2019-06-19 14:11:03.124 INFO  (searcherExecutor-10-thread-1) [   ] o.a.s.c.SolrCore [testcore01] Registered new searcher Searcher@55f2e12[testcore01] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_7(7.7.2):C10:[diagnostics={os=Linux, java.vendor=Oracle Corporation, java.version=1.8.0_111, java.vm.version=25.111-b14, lucene.version=7.7.2, os.arch=amd64, java.runtime.version=1.8.0_111-b14, source=flush, os.version=3.10.0-514.26.2.el7.x86_64, timestamp=1560924663075}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2019-06-19 14:11:03.137 INFO  (Thread-12) [   ] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
+2019-06-19 14:11:03.137 INFO  (Thread-12) [   ] o.a.s.h.d.SimplePropertiesWriter Wrote last indexed time to dataimport.properties
+2019-06-19 14:11:03.137 INFO  (Thread-12) [   ] o.a.s.h.d.DocBuilder Time taken = 0:0:0.113
+2019-06-19 14:11:03.137 INFO  (Thread-12) [   ] o.a.s.u.p.LogUpdateProcessorFactory [testcore01]  webapp=/solr path=/dataimport params={core=testcore01&indent=on&commit=true&name=dataimport&clean=true&wt=json&command=full-import&_=1560915801410&verbose=false} status=0 QTime=11{deleteByQuery=*:* (-1636748139455053824),add=[1 (1636748139484413952), 10 (1636748139487559680), 2 (1636748139488608256), 3 (1636748139489656832), 4 (1636748139490705408), 5 (1636748139491753984), 6 (1636748139492802560), 7 (1636748139493851136), 8 (1636748139493851137), 9 (1636748139494899712)],commit=} 0 131
+2019-06-19 14:11:04.893 INFO  (http-nio-8014-exec-4) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1560915801410} status=0 QTime=0
+2019-06-19 14:11:06.894 INFO  (http-nio-8014-exec-7) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1560915801410} status=0 QTime=0
+2019-06-19 14:11:08.892 INFO  (http-nio-8014-exec-2) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1560915801410} status=0 QTime=0
+2019-06-19 14:11:10.888 INFO  (http-nio-8014-exec-1) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1560915801410} status=0 QTime=0
+2019-06-19 14:11:11.590 INFO  (http-nio-8014-exec-5) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1560915801329} status=0 QTime=0
+2019-06-19 14:11:11.602 INFO  (http-nio-8014-exec-2) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1560915801329} status=0 QTime=10
+2019-06-19 14:11:13.079 INFO  (http-nio-8014-exec-10) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=*:*&_=1560915808635} hits=10 status=0 QTime=0
+2019-06-19 14:11:27.222 ERROR (http-nio-8014-exec-6) [   x:testcore01] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: Can't determine a Sort Order (asc or desc) in sort spec 'id', pos=2
+	at org.apache.solr.search.SortSpecParsing.parseSortSpecImpl(SortSpecParsing.java:173)
+	at org.apache.solr.search.SortSpecParsing.parseSortSpec(SortSpecParsing.java:60)
+	at org.apache.solr.search.QParser.getSortSpec(QParser.java:280)
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:187)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:272)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:199)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2551)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:711)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:516)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:395)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:341)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:624)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:498)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:796)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1368)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+2019-06-19 14:11:27.223 INFO  (http-nio-8014-exec-6) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=*:*&sort=id&_=1560915808635} status=400 QTime=7
+2019-06-19 14:11:35.002 INFO  (http-nio-8014-exec-4) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=*:*&_=1560915808635} hits=10 status=0 QTime=0
+2019-06-19 14:12:02.589 INFO  (http-nio-8014-exec-2) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=*:*&sort=id+asc&_=1560915808635} hits=10 status=0 QTime=10
+2019-06-19 14:12:13.815 INFO  (http-nio-8014-exec-9) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=*:*&sort=id+DESC&_=1560915808635} hits=10 status=0 QTime=0
+2019-06-19 14:12:25.247 INFO  (http-nio-8014-exec-5) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=*:*&sort=id+ASC&_=1560915808635} hits=10 status=0 QTime=0
+2019-06-19 14:12:55.446 INFO  (http-nio-8014-exec-2) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=product_catalog_name:颜色&sort=id+ASC&_=1560915808635} hits=3 status=0 QTime=8
+2019-06-19 15:02:42.235 INFO  (http-nio-8014-exec-9) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1560927763809} status=0 QTime=0
+2019-06-19 15:02:42.261 INFO  (http-nio-8014-exec-6) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1560927763810} status=0 QTime=25
+2019-06-19 15:02:42.307 INFO  (http-nio-8014-exec-9) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1560927763810} status=0 QTime=7
+2019-06-19 15:13:54.776 INFO  (http-nio-8014-exec-3) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={id=*:*&wt=javabin&version=2} hits=0 status=0 QTime=2
+2019-06-19 15:14:27.045 INFO  (http-nio-8014-exec-2) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=*:*&wt=javabin&version=2} hits=10 status=0 QTime=0
+2019-06-19 15:25:25.702 INFO  (http-nio-8014-exec-4) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1560927763809} status=0 QTime=0
+2019-06-19 15:25:25.756 INFO  (http-nio-8014-exec-1) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/replication params={wt=json&command=details&_=1560929127547} status=0 QTime=3
+2019-06-19 15:25:25.759 INFO  (http-nio-8014-exec-3) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1560929127547} status=0 QTime=0
+2019-06-19 15:25:25.760 INFO  (http-nio-8014-exec-7) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1560927763810&ts=1560927763810} status=503 QTime=3
+2019-06-19 15:25:25.781 INFO  (http-nio-8014-exec-6) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/admin/system params={wt=json&_=1560929127547} status=0 QTime=23
+2019-06-19 15:25:25.783 INFO  (http-nio-8014-exec-10) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1560927763810} status=0 QTime=39
+2019-06-19 15:25:41.894 INFO  (http-nio-8014-exec-6) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1560927763809} status=0 QTime=0
+2019-06-19 15:25:41.898 INFO  (http-nio-8014-exec-10) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1560929143728} status=0 QTime=0
+2019-06-19 15:25:41.916 INFO  (http-nio-8014-exec-5) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1560927763810} status=0 QTime=16
+2019-06-19 15:25:41.983 INFO  (http-nio-8014-exec-8) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1560927763809} status=0 QTime=0
+2019-06-19 15:25:41.988 INFO  (http-nio-8014-exec-4) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=show-config&_=1560929143728} status=0 QTime=0
+2019-06-19 15:25:41.989 INFO  (http-nio-8014-exec-4) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1560929143728} status=0 QTime=0
+2019-06-19 15:25:41.997 INFO  (http-nio-8014-exec-9) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1560927763810} status=0 QTime=12
+2019-06-19 15:25:42.037 INFO  (http-nio-8014-exec-3) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1560929143728} status=0 QTime=0
+2019-06-19 15:25:43.556 INFO  (http-nio-8014-exec-1) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1560927763809} status=0 QTime=0
+2019-06-19 15:25:43.578 INFO  (http-nio-8014-exec-9) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1560927763810} status=0 QTime=21
+2019-06-19 15:26:52.968 INFO  (http-nio-8014-exec-2) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=product_catalog_name:金属&wt=javabin&version=2} hits=2 status=0 QTime=1
+2019-06-19 15:35:48.956 INFO  (http-nio-8014-exec-8) [   x:testcore01] o.a.s.s.ManagedIndexSchema Upgraded to managed schema at /opt/solrServer/solr/solrhome/testcore01/conf/managed-schema
+2019-06-19 15:35:49.010 INFO  (http-nio-8014-exec-8) [   x:testcore01] o.a.s.u.p.LogUpdateProcessorFactory [testcore01]  webapp=/solr path=/update params={wt=javabin&version=2}{add=[123 (1636753472481132544)]} 0 312
+2019-06-19 15:35:49.111 INFO  (http-nio-8014-exec-1) [   x:testcore01] o.a.s.u.DirectUpdateHandler2 start commit{_version_=1636753472603815936,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2019-06-19 15:35:49.111 INFO  (http-nio-8014-exec-1) [   x:testcore01] o.a.s.u.SolrIndexWriter Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@2f9ccb1 commitCommandVersion:1636753472603815936
+2019-06-19 15:35:49.200 INFO  (http-nio-8014-exec-1) [   x:testcore01] o.a.s.s.SolrIndexSearcher Opening [Searcher@8f7d500[testcore01] main]
+2019-06-19 15:35:49.201 INFO  (searcherExecutor-10-thread-1-processing-x:testcore01) [   x:testcore01] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@8f7d500[testcore01] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_7(7.7.2):C10:[diagnostics={os=Linux, java.vendor=Oracle Corporation, java.version=1.8.0_111, java.vm.version=25.111-b14, lucene.version=7.7.2, os.arch=amd64, java.runtime.version=1.8.0_111-b14, source=flush, os.version=3.10.0-514.26.2.el7.x86_64, timestamp=1560924663075}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_8(7.7.2):C1:[diagnostics={os=Linux, java.vendor=Oracle Corporation, java.version=1.8.0_111, java.vm.version=25.111-b14, lucene.version=7.7.2, os.arch=amd64, java.runtime.version=1.8.0_111-b14, source=flush, os.version=3.10.0-514.26.2.el7.x86_64, timestamp=1560929749149}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2019-06-19 15:35:49.201 INFO  (searcherExecutor-10-thread-1-processing-x:testcore01) [   x:testcore01] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2019-06-19 15:35:49.203 INFO  (searcherExecutor-10-thread-1-processing-x:testcore01) [   x:testcore01] o.a.s.c.SolrCore [testcore01] Registered new searcher Searcher@8f7d500[testcore01] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_7(7.7.2):C10:[diagnostics={os=Linux, java.vendor=Oracle Corporation, java.version=1.8.0_111, java.vm.version=25.111-b14, lucene.version=7.7.2, os.arch=amd64, java.runtime.version=1.8.0_111-b14, source=flush, os.version=3.10.0-514.26.2.el7.x86_64, timestamp=1560924663075}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_8(7.7.2):C1:[diagnostics={os=Linux, java.vendor=Oracle Corporation, java.version=1.8.0_111, java.vm.version=25.111-b14, lucene.version=7.7.2, os.arch=amd64, java.runtime.version=1.8.0_111-b14, source=flush, os.version=3.10.0-514.26.2.el7.x86_64, timestamp=1560929749149}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2019-06-19 15:35:49.217 INFO  (http-nio-8014-exec-1) [   x:testcore01] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2019-06-19 15:35:49.217 INFO  (http-nio-8014-exec-1) [   x:testcore01] o.a.s.u.p.LogUpdateProcessorFactory [testcore01]  webapp=/solr path=/update params={waitSearcher=true&commit=true&softCommit=false&wt=javabin&version=2}{commit=} 0 106
+2019-06-19 15:36:08.519 INFO  (http-nio-8014-exec-4) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=*:*&sort=id+ASC&_=1560915808635} hits=11 status=0 QTime=3
+2019-06-19 15:36:17.926 INFO  (http-nio-8014-exec-9) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=id:123&sort=id+ASC&_=1560915808635} hits=1 status=0 QTime=1
+2019-06-19 15:36:33.550 INFO  (http-nio-8014-exec-7) [   x:testcore01] o.a.s.u.p.LogUpdateProcessorFactory [testcore01]  webapp=/solr path=/update params={wt=javabin&version=2}{delete=[123 (-1636753519200436224)]} 0 3
+2019-06-19 15:36:33.647 INFO  (http-nio-8014-exec-10) [   x:testcore01] o.a.s.u.DirectUpdateHandler2 start commit{_version_=1636753519303196672,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2019-06-19 15:36:33.647 INFO  (http-nio-8014-exec-10) [   x:testcore01] o.a.s.u.SolrIndexWriter Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@2f9ccb1 commitCommandVersion:1636753519303196672
+2019-06-19 15:36:33.657 INFO  (http-nio-8014-exec-10) [   x:testcore01] o.a.s.s.SolrIndexSearcher Opening [Searcher@4a05c30c[testcore01] main]
+2019-06-19 15:36:33.658 INFO  (searcherExecutor-10-thread-1-processing-x:testcore01) [   x:testcore01] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@4a05c30c[testcore01] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_7(7.7.2):C10:[diagnostics={os=Linux, java.vendor=Oracle Corporation, java.version=1.8.0_111, java.vm.version=25.111-b14, lucene.version=7.7.2, os.arch=amd64, java.runtime.version=1.8.0_111-b14, source=flush, os.version=3.10.0-514.26.2.el7.x86_64, timestamp=1560924663075}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2019-06-19 15:36:33.658 INFO  (searcherExecutor-10-thread-1-processing-x:testcore01) [   x:testcore01] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2019-06-19 15:36:33.660 INFO  (searcherExecutor-10-thread-1-processing-x:testcore01) [   x:testcore01] o.a.s.c.SolrCore [testcore01] Registered new searcher Searcher@4a05c30c[testcore01] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_7(7.7.2):C10:[diagnostics={os=Linux, java.vendor=Oracle Corporation, java.version=1.8.0_111, java.vm.version=25.111-b14, lucene.version=7.7.2, os.arch=amd64, java.runtime.version=1.8.0_111-b14, source=flush, os.version=3.10.0-514.26.2.el7.x86_64, timestamp=1560924663075}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2019-06-19 15:36:33.660 INFO  (http-nio-8014-exec-10) [   x:testcore01] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2019-06-19 15:36:33.669 INFO  (http-nio-8014-exec-10) [   x:testcore01] o.a.s.u.p.LogUpdateProcessorFactory [testcore01]  webapp=/solr path=/update params={waitSearcher=true&commit=true&softCommit=false&wt=javabin&version=2}{commit=} 0 21
+2019-06-19 15:36:39.440 INFO  (http-nio-8014-exec-5) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=id:123&sort=id+ASC&_=1560915808635} hits=0 status=0 QTime=0
+2019-06-19 15:36:47.778 INFO  (http-nio-8014-exec-8) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=*:*&sort=id+ASC&_=1560915808635} hits=10 status=0 QTime=0
+2019-06-19 15:38:42.226 INFO  (http-nio-8014-exec-3) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=id:2&sort=id+ASC&_=1560915808635} hits=1 status=0 QTime=0
+2019-06-19 15:38:59.662 INFO  (http-nio-8014-exec-4) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=*:*&sort=id+ASC&_=1560915808635} hits=10 status=0 QTime=0
+2019-06-19 15:39:31.116 INFO  (http-nio-8014-exec-7) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=*:*&fq=product_price[*+TO+12]&sort=id+ASC&_=1560915808635} hits=0 status=0 QTime=14
+2019-06-19 15:40:09.812 ERROR (http-nio-8014-exec-6) [   x:testcore01] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: org.apache.solr.search.SyntaxError: Cannot parse 'product_price [* to 12]': Encountered " <RANGE_GOOP> "to "" at line 1, column 17.
+Was expecting:
+    "TO" ...
+    
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:218)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:272)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:199)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2551)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:711)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:516)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:395)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:341)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:624)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:498)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:796)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1368)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.solr.search.SyntaxError: Cannot parse 'product_price [* to 12]': Encountered " <RANGE_GOOP> "to "" at line 1, column 17.
+Was expecting:
+    "TO" ...
+    
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:258)
+	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49)
+	at org.apache.solr.search.QParser.getQuery(QParser.java:173)
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:207)
+	... 25 more
+Caused by: org.apache.solr.parser.ParseException: Encountered " <RANGE_GOOP> "to "" at line 1, column 17.
+Was expecting:
+    "TO" ...
+    
+	at org.apache.solr.parser.QueryParser.generateParseException(QueryParser.java:885)
+	at org.apache.solr.parser.QueryParser.jj_consume_token(QueryParser.java:767)
+	at org.apache.solr.parser.QueryParser.Term(QueryParser.java:453)
+	at org.apache.solr.parser.QueryParser.Clause(QueryParser.java:278)
+	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:222)
+	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:131)
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:254)
+	... 28 more
+
+2019-06-19 15:40:09.813 INFO  (http-nio-8014-exec-6) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=*:*&fq=product_price+[*+to+12]&sort=id+ASC&_=1560915808635} status=400 QTime=3
+2019-06-19 15:41:01.093 ERROR (http-nio-8014-exec-2) [   x:testcore01] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: org.apache.solr.search.SyntaxError: Cannot parse 'product_price:[* to 12]': Encountered " <RANGE_GOOP> "to "" at line 1, column 17.
+Was expecting:
+    "TO" ...
+    
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:218)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:272)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:199)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2551)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:711)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:516)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:395)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:341)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:624)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:498)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:796)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1368)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.solr.search.SyntaxError: Cannot parse 'product_price:[* to 12]': Encountered " <RANGE_GOOP> "to "" at line 1, column 17.
+Was expecting:
+    "TO" ...
+    
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:258)
+	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49)
+	at org.apache.solr.search.QParser.getQuery(QParser.java:173)
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:207)
+	... 25 more
+Caused by: org.apache.solr.parser.ParseException: Encountered " <RANGE_GOOP> "to "" at line 1, column 17.
+Was expecting:
+    "TO" ...
+    
+	at org.apache.solr.parser.QueryParser.generateParseException(QueryParser.java:885)
+	at org.apache.solr.parser.QueryParser.jj_consume_token(QueryParser.java:767)
+	at org.apache.solr.parser.QueryParser.Term(QueryParser.java:453)
+	at org.apache.solr.parser.QueryParser.Clause(QueryParser.java:278)
+	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:162)
+	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:131)
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:254)
+	... 28 more
+
+2019-06-19 15:41:01.093 INFO  (http-nio-8014-exec-2) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=*:*&fq=product_price:[*+to+12]&sort=id+ASC&_=1560915808635} status=400 QTime=1
+2019-06-19 15:41:09.889 ERROR (http-nio-8014-exec-5) [   x:testcore01] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: org.apache.solr.search.SyntaxError: Cannot parse 'product_price:[* to 12]': Encountered " <RANGE_GOOP> "to "" at line 1, column 17.
+Was expecting:
+    "TO" ...
+    
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:218)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:272)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:199)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2551)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:711)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:516)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:395)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:341)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:624)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:498)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:796)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1368)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.solr.search.SyntaxError: Cannot parse 'product_price:[* to 12]': Encountered " <RANGE_GOOP> "to "" at line 1, column 17.
+Was expecting:
+    "TO" ...
+    
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:258)
+	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49)
+	at org.apache.solr.search.QParser.getQuery(QParser.java:173)
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:207)
+	... 25 more
+Caused by: org.apache.solr.parser.ParseException: Encountered " <RANGE_GOOP> "to "" at line 1, column 17.
+Was expecting:
+    "TO" ...
+    
+	at org.apache.solr.parser.QueryParser.generateParseException(QueryParser.java:885)
+	at org.apache.solr.parser.QueryParser.jj_consume_token(QueryParser.java:767)
+	at org.apache.solr.parser.QueryParser.Term(QueryParser.java:453)
+	at org.apache.solr.parser.QueryParser.Clause(QueryParser.java:278)
+	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:162)
+	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:131)
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:254)
+	... 28 more
+
+2019-06-19 15:41:09.889 INFO  (http-nio-8014-exec-5) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=*:*&fq=product_price:[*+to+12]&sort=id+ASC&_=1560915808635} status=400 QTime=1
+2019-06-19 15:41:22.915 ERROR (http-nio-8014-exec-8) [   x:testcore01] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: org.apache.solr.search.SyntaxError: Cannot parse 'product_price:[* to 12]': Encountered " <RANGE_GOOP> "to "" at line 1, column 17.
+Was expecting:
+    "TO" ...
+    
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:218)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:272)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:199)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2551)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:711)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:516)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:395)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:341)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:624)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:498)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:796)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1368)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.solr.search.SyntaxError: Cannot parse 'product_price:[* to 12]': Encountered " <RANGE_GOOP> "to "" at line 1, column 17.
+Was expecting:
+    "TO" ...
+    
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:258)
+	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49)
+	at org.apache.solr.search.QParser.getQuery(QParser.java:173)
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:207)
+	... 25 more
+Caused by: org.apache.solr.parser.ParseException: Encountered " <RANGE_GOOP> "to "" at line 1, column 17.
+Was expecting:
+    "TO" ...
+    
+	at org.apache.solr.parser.QueryParser.generateParseException(QueryParser.java:885)
+	at org.apache.solr.parser.QueryParser.jj_consume_token(QueryParser.java:767)
+	at org.apache.solr.parser.QueryParser.Term(QueryParser.java:453)
+	at org.apache.solr.parser.QueryParser.Clause(QueryParser.java:278)
+	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:162)
+	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:131)
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:254)
+	... 28 more
+
+2019-06-19 15:41:22.915 INFO  (http-nio-8014-exec-8) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=*:*&fq=product_price:[*+to+12]&sort=id+ASC&_=1560915808635} status=400 QTime=1
+2019-06-19 15:41:30.621 ERROR (http-nio-8014-exec-1) [   x:testcore01] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: org.apache.solr.search.SyntaxError: Cannot parse 'product_price:[12 to *]': Encountered " <RANGE_GOOP> "to "" at line 1, column 18.
+Was expecting:
+    "TO" ...
+    
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:218)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:272)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:199)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2551)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:711)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:516)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:395)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:341)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:624)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:498)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:796)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1368)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.solr.search.SyntaxError: Cannot parse 'product_price:[12 to *]': Encountered " <RANGE_GOOP> "to "" at line 1, column 18.
+Was expecting:
+    "TO" ...
+    
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:258)
+	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49)
+	at org.apache.solr.search.QParser.getQuery(QParser.java:173)
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:207)
+	... 25 more
+Caused by: org.apache.solr.parser.ParseException: Encountered " <RANGE_GOOP> "to "" at line 1, column 18.
+Was expecting:
+    "TO" ...
+    
+	at org.apache.solr.parser.QueryParser.generateParseException(QueryParser.java:885)
+	at org.apache.solr.parser.QueryParser.jj_consume_token(QueryParser.java:767)
+	at org.apache.solr.parser.QueryParser.Term(QueryParser.java:453)
+	at org.apache.solr.parser.QueryParser.Clause(QueryParser.java:278)
+	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:162)
+	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:131)
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:254)
+	... 28 more
+
+2019-06-19 15:41:30.621 INFO  (http-nio-8014-exec-1) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=*:*&fq=product_price:[12+to+*]&sort=id+ASC&_=1560915808635} status=400 QTime=1
+2019-06-19 15:41:59.968 INFO  (http-nio-8014-exec-3) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=*:*&fq=product_price:[12+TO+*]&sort=id+ASC&_=1560915808635} hits=2 status=0 QTime=10
+2019-06-19 15:42:13.261 INFO  (http-nio-8014-exec-4) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=*:*&fq=product_price:[*+TO+12]&sort=id+ASC&_=1560915808635} hits=10 status=0 QTime=7
+2019-06-19 15:42:24.876 INFO  (http-nio-8014-exec-9) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=*:*&fq=product_price:{*+TO+12}&sort=id+ASC&_=1560915808635} hits=8 status=0 QTime=1
+2019-06-19 15:43:28.451 INFO  (http-nio-8014-exec-10) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=product_catalog_name:金属&wt=javabin&version=2} hits=2 status=0 QTime=8
+2019-06-19 15:50:28.861 INFO  (http-nio-8014-exec-2) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=product_catalog_name:金属&wt=javabin&version=2} hits=2 status=0 QTime=0
+2019-06-19 15:51:14.888 INFO  (http-nio-8014-exec-8) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=product_catalog_name:金属&wt=javabin&version=2} hits=2 status=0 QTime=8
+2019-06-20 10:04:32.527 INFO  (http-nio-8014-exec-1) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1560996274053} status=0 QTime=2
+2019-06-20 10:04:32.610 INFO  (http-nio-8014-exec-5) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1560996274053} status=0 QTime=90
+2019-06-20 10:04:32.661 INFO  (http-nio-8014-exec-8) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1560996274053} status=0 QTime=13
+2019-06-20 10:04:35.418 INFO  (http-nio-8014-exec-1) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1560996274053} status=0 QTime=0
+2019-06-20 10:04:35.420 INFO  (http-nio-8014-exec-4) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/replication params={wt=json&command=details&_=1560996277211} status=0 QTime=1
+2019-06-20 10:04:35.432 INFO  (http-nio-8014-exec-7) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1560996277211} status=0 QTime=0
+2019-06-20 10:04:35.433 INFO  (http-nio-8014-exec-10) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1560996274053&ts=1560996274053} status=503 QTime=0
+2019-06-20 10:04:35.453 INFO  (http-nio-8014-exec-6) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/admin/system params={wt=json&_=1560996277211} status=0 QTime=19
+2019-06-20 10:04:35.458 INFO  (http-nio-8014-exec-4) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1560996274053} status=0 QTime=36
+2019-06-20 10:04:39.540 INFO  (http-nio-8014-exec-9) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1560996274053} status=0 QTime=0
+2019-06-20 10:04:39.555 INFO  (http-nio-8014-exec-7) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1560996274053} status=0 QTime=13
+2019-06-20 10:09:29.575 INFO  (http-nio-8014-exec-2) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=*:*&_=1560996281285} hits=10 status=0 QTime=1
+2019-06-20 10:20:32.331 INFO  (http-nio-8014-exec-5) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=product_catalog_name:金属&wt=javabin&version=2} hits=2 status=0 QTime=8
+2019-06-20 10:21:01.809 INFO  (http-nio-8014-exec-8) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=金属&wt=javabin&version=2} hits=0 status=0 QTime=1
+2019-06-20 10:22:15.962 INFO  (http-nio-8014-exec-1) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=金属&df=product_keywords&wt=javabin&version=2} hits=0 status=0 QTime=7
+2019-06-20 10:23:01.083 INFO  (http-nio-8014-exec-10) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=金属&df=product_catalog_name&wt=javabin&version=2} hits=2 status=0 QTime=0
+2019-06-20 10:42:42.660 INFO  (http-nio-8014-exec-7) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1560996274053} status=0 QTime=0
+2019-06-20 10:42:42.703 INFO  (http-nio-8014-exec-4) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1560998564463} status=0 QTime=1
+2019-06-20 10:42:42.709 INFO  (http-nio-8014-exec-5) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1560996274053} status=0 QTime=15
+2019-06-20 10:42:42.780 INFO  (http-nio-8014-exec-8) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1560996274053} status=0 QTime=0
+2019-06-20 10:42:42.785 INFO  (http-nio-8014-exec-1) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1560998564463} status=0 QTime=0
+2019-06-20 10:42:42.796 INFO  (http-nio-8014-exec-3) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1560996274053} status=0 QTime=14
+2019-06-20 10:42:42.817 INFO  (http-nio-8014-exec-9) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=show-config&_=1560998564463} status=0 QTime=1
+2019-06-20 10:42:42.880 INFO  (http-nio-8014-exec-4) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1560998564463} status=0 QTime=0
+2019-06-20 10:42:46.285 INFO  (http-nio-8014-exec-8) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1560998564463} status=0 QTime=0
+2019-06-20 10:42:46.603 INFO  (http-nio-8014-exec-3) [   x:testcore01] o.a.s.h.d.DataImporter Loading DIH Configuration: data-config.xml
+2019-06-20 10:42:46.605 INFO  (http-nio-8014-exec-3) [   x:testcore01] o.a.s.h.d.DataImporter Data Configuration loaded successfully
+2019-06-20 10:42:46.608 INFO  (http-nio-8014-exec-3) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/dataimport params={core=testcore01&indent=on&commit=true&name=dataimport&clean=true&wt=json&command=full-import&_=1560998564463&verbose=false} status=0 QTime=5
+2019-06-20 10:42:46.610 INFO  (Thread-13) [   ] o.a.s.h.d.DataImporter Starting Full Import
+2019-06-20 10:42:46.614 INFO  (Thread-13) [   ] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
+2019-06-20 10:42:46.617 INFO  (Thread-13) [   ] o.a.s.s.SolrIndexSearcher Opening [Searcher@25eca23a[testcore01] realtime]
+2019-06-20 10:42:46.621 INFO  (Thread-13) [   ] o.a.s.h.d.JdbcDataSource Creating a connection for entity product with URL: jdbc:mysql://localhost:3306/lucene
+2019-06-20 10:42:46.633 INFO  (Thread-13) [   ] o.a.s.h.d.JdbcDataSource Time taken for getConnection(): 11
+2019-06-20 10:42:46.662 INFO  (Thread-13) [   ] o.a.s.h.d.DocBuilder Import completed successfully
+2019-06-20 10:42:46.663 INFO  (Thread-13) [   ] o.a.s.u.DirectUpdateHandler2 start commit{_version_=1636825633036173312,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2019-06-20 10:42:46.663 INFO  (Thread-13) [   ] o.a.s.u.SolrIndexWriter Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@2f9ccb1 commitCommandVersion:1636825633036173312
+2019-06-20 10:42:46.668 INFO  (http-nio-8014-exec-9) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1560998564463} status=0 QTime=13
+2019-06-20 10:42:46.722 INFO  (Thread-13) [   ] o.a.s.s.SolrIndexSearcher Opening [Searcher@dd0b090[testcore01] main]
+2019-06-20 10:42:46.724 INFO  (searcherExecutor-10-thread-1) [   ] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@dd0b090[testcore01] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_9(7.7.2):C10:[diagnostics={os=Linux, java.vendor=Oracle Corporation, java.version=1.8.0_111, java.vm.version=25.111-b14, lucene.version=7.7.2, os.arch=amd64, java.runtime.version=1.8.0_111-b14, source=flush, os.version=3.10.0-514.26.2.el7.x86_64, timestamp=1560998566667}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2019-06-20 10:42:46.724 INFO  (searcherExecutor-10-thread-1) [   ] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2019-06-20 10:42:46.726 INFO  (searcherExecutor-10-thread-1) [   ] o.a.s.c.SolrCore [testcore01] Registered new searcher Searcher@dd0b090[testcore01] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_9(7.7.2):C10:[diagnostics={os=Linux, java.vendor=Oracle Corporation, java.version=1.8.0_111, java.vm.version=25.111-b14, lucene.version=7.7.2, os.arch=amd64, java.runtime.version=1.8.0_111-b14, source=flush, os.version=3.10.0-514.26.2.el7.x86_64, timestamp=1560998566667}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2019-06-20 10:42:46.738 INFO  (Thread-13) [   ] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2019-06-20 10:42:46.741 INFO  (Thread-13) [   ] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
+2019-06-20 10:42:46.741 INFO  (Thread-13) [   ] o.a.s.h.d.SimplePropertiesWriter Wrote last indexed time to dataimport.properties
+2019-06-20 10:42:46.741 INFO  (Thread-13) [   ] o.a.s.h.d.DocBuilder Time taken = 0:0:0.126
+2019-06-20 10:42:46.741 INFO  (Thread-13) [   ] o.a.s.u.p.LogUpdateProcessorFactory [testcore01]  webapp=/solr path=/dataimport params={core=testcore01&indent=on&commit=true&name=dataimport&clean=true&wt=json&command=full-import&_=1560998564463&verbose=false} status=0 QTime=5{deleteByQuery=*:* (-1636825632986890240),add=[1 (1636825633007861760), 10 (1636825633018347520), 2 (1636825633020444672), 3 (1636825633020444673), 4 (1636825633021493248), 5 (1636825633022541824), 6 (1636825633023590400), 7 (1636825633024638976), 8 (1636825633025687552), 9 (1636825633026736128)],commit=} 0 138
+2019-06-20 10:42:48.288 INFO  (http-nio-8014-exec-6) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1560998564463} status=0 QTime=0
+2019-06-20 10:42:50.294 INFO  (http-nio-8014-exec-2) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1560998564463} status=0 QTime=0
+2019-06-20 10:42:52.288 INFO  (http-nio-8014-exec-7) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1560998564463} status=0 QTime=0
+2019-06-20 10:42:52.852 INFO  (http-nio-8014-exec-4) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1560996274053} status=0 QTime=0
+2019-06-20 10:42:52.869 INFO  (http-nio-8014-exec-5) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1560996274053} status=0 QTime=14
+2019-06-20 10:42:54.285 INFO  (http-nio-8014-exec-3) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=*:*&_=1560996281285} hits=10 status=0 QTime=1
+2019-06-20 10:43:24.571 INFO  (http-nio-8014-exec-7) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=金属&df=product_keywords&wt=javabin&version=2} hits=0 status=0 QTime=7
+2019-06-20 10:44:07.201 INFO  (http-nio-8014-exec-5) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=蓝&df=product_keywords&wt=javabin&version=2} hits=1 status=0 QTime=1
+2019-06-20 10:44:26.582 INFO  (http-nio-8014-exec-1) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=帽子&df=product_keywords&wt=javabin&version=2} hits=10 status=0 QTime=1
+2019-06-20 11:46:54.631 ERROR (http-nio-8014-exec-10) [   x:testcore01] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: Can't determine a Sort Order (asc or desc) in sort spec 'ASC', pos=3
+	at org.apache.solr.search.SortSpecParsing.parseSortSpecImpl(SortSpecParsing.java:173)
+	at org.apache.solr.search.SortSpecParsing.parseSortSpec(SortSpecParsing.java:60)
+	at org.apache.solr.search.QParser.getSortSpec(QParser.java:280)
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:187)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:272)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:199)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2551)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:711)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:516)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:395)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:341)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:624)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:498)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:796)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1368)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+2019-06-20 11:46:54.633 INFO  (http-nio-8014-exec-10) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={df=product_keywords&hl=true&sort=ASC&wt=javabin&version=2} status=400 QTime=2
+2019-06-20 11:49:54.429 INFO  (http-nio-8014-exec-9) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={df=product_keywords&wt=javabin&version=2} hits=0 status=0 QTime=0
+2019-06-20 11:50:07.742 INFO  (http-nio-8014-exec-6) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={df=product_keywords&wt=javabin&version=2} hits=0 status=0 QTime=0
+2019-06-20 11:50:50.110 INFO  (http-nio-8014-exec-7) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=帽子&df=product_keywords&wt=javabin&version=2} hits=10 status=0 QTime=0
+2019-06-20 11:51:58.259 INFO  (http-nio-8014-exec-5) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=帽子&df=product_keywords&wt=javabin&version=2} hits=10 status=0 QTime=0
+2019-06-20 11:53:21.538 INFO  (http-nio-8014-exec-1) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={df=product_keywords&wt=javabin&version=2} hits=0 status=0 QTime=0
+2019-06-20 11:53:42.089 INFO  (http-nio-8014-exec-10) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=帽子&df=product_keywords&wt=javabin&version=2} hits=10 status=0 QTime=0
+2019-06-20 11:57:17.031 INFO  (http-nio-8014-exec-6) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={df=product_keywords&wt=javabin&version=2} hits=0 status=0 QTime=0
+2019-06-20 11:57:52.844 INFO  (http-nio-8014-exec-7) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=帽子&df=product_keywords&wt=javabin&version=2} hits=10 status=0 QTime=0
+2019-06-20 11:59:37.181 INFO  (http-nio-8014-exec-5) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={df=product_keywords&wt=javabin&version=2} hits=0 status=0 QTime=0
+2019-06-20 11:59:46.498 INFO  (http-nio-8014-exec-8) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=帽子&df=product_keywords&wt=javabin&version=2} hits=10 status=0 QTime=0
+2019-06-20 12:02:24.325 INFO  (http-nio-8014-exec-3) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=蓝&df=product_keywords&wt=javabin&version=2} hits=1 status=0 QTime=0
+2019-06-20 12:28:36.531 INFO  (http-nio-8014-exec-9) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={df=product_keywords&wt=javabin&version=2} hits=0 status=0 QTime=0
+2019-06-20 12:28:45.305 INFO  (http-nio-8014-exec-6) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=蓝&df=product_keywords&wt=javabin&version=2} hits=1 status=0 QTime=7
+2019-06-20 12:29:56.227 INFO  (http-nio-8014-exec-7) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={df=product_keywords&wt=javabin&version=2} hits=0 status=0 QTime=0
+2019-06-20 14:03:03.380 INFO  (http-nio-8014-exec-5) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={df=product_keywords&wt=javabin&version=2} hits=0 status=0 QTime=0
+2019-06-20 14:03:20.604 INFO  (http-nio-8014-exec-8) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=蓝&df=product_keywords&wt=javabin&version=2} hits=1 status=0 QTime=0
+2019-06-20 14:05:13.482 INFO  (http-nio-8014-exec-8) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1561010715138} status=0 QTime=0
+2019-06-20 14:05:13.534 INFO  (http-nio-8014-exec-8) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1561010715138} status=0 QTime=51
+2019-06-20 14:05:13.602 INFO  (http-nio-8014-exec-3) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1561010715138} status=0 QTime=30
+2019-06-20 14:05:17.235 INFO  (http-nio-8014-exec-9) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1561010715138} status=0 QTime=0
+2019-06-20 14:05:17.239 INFO  (http-nio-8014-exec-6) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1561010719153} status=0 QTime=2
+2019-06-20 14:05:17.240 INFO  (http-nio-8014-exec-7) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/replication params={wt=json&command=details&_=1561010719153} status=0 QTime=0
+2019-06-20 14:05:17.261 INFO  (http-nio-8014-exec-4) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/admin/system params={wt=json&_=1561010719153} status=0 QTime=21
+2019-06-20 14:05:17.262 INFO  (http-nio-8014-exec-2) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1561010715138} status=0 QTime=25
+2019-06-20 14:05:17.285 INFO  (http-nio-8014-exec-1) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1561010715138&ts=1561010715138} status=503 QTime=0
+2019-06-20 14:05:19.089 INFO  (http-nio-8014-exec-6) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1561010715138} status=0 QTime=0
+2019-06-20 14:05:19.108 INFO  (http-nio-8014-exec-7) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1561010715138} status=0 QTime=15
+2019-06-20 14:05:20.565 INFO  (http-nio-8014-exec-8) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=*:*&_=1561010720948} hits=10 status=0 QTime=0
+2019-06-20 14:08:06.315 INFO  (http-nio-8014-exec-2) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={df=product_keywords&wt=javabin&version=2} hits=0 status=0 QTime=0
+2019-06-20 14:08:16.763 INFO  (http-nio-8014-exec-5) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=蓝&df=product_keywords&wt=javabin&version=2} hits=1 status=0 QTime=0
+2019-06-20 14:11:02.267 INFO  (http-nio-8014-exec-8) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={df=product_keywords&wt=javabin&version=2} hits=0 status=0 QTime=0
+2019-06-20 14:13:14.313 INFO  (http-nio-8014-exec-10) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={df=product_keywords&wt=javabin&version=2} hits=0 status=0 QTime=0
+2019-06-20 14:13:27.459 INFO  (http-nio-8014-exec-9) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=蓝&df=product_keywords&wt=javabin&version=2} hits=1 status=0 QTime=7
+2019-06-20 14:16:34.780 INFO  (http-nio-8014-exec-7) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=蓝&df=product_keywords&wt=javabin&version=2} hits=1 status=0 QTime=0
+2019-06-20 14:16:51.797 INFO  (http-nio-8014-exec-4) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=帽子&df=product_keywords&wt=javabin&version=2} hits=10 status=0 QTime=8
+2019-06-20 14:20:13.454 INFO  (http-nio-8014-exec-5) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=蓝&df=product_keywords&wt=javabin&version=2} hits=1 status=0 QTime=0
+2019-06-20 14:22:35.928 INFO  (http-nio-8014-exec-8) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={df=product_keywords&wt=javabin&version=2} hits=0 status=0 QTime=0
+2019-06-20 14:22:44.005 INFO  (http-nio-8014-exec-3) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=蓝&df=product_keywords&wt=javabin&version=2} hits=1 status=0 QTime=0
+2019-06-20 14:23:34.431 INFO  (http-nio-8014-exec-9) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={df=product_keywords&wt=javabin&version=2} hits=0 status=0 QTime=0
+2019-06-20 14:23:41.034 INFO  (http-nio-8014-exec-6) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=蓝&df=product_keywords&wt=javabin&version=2} hits=1 status=0 QTime=0
+2019-06-20 14:29:57.823 INFO  (http-nio-8014-exec-4) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={df=product_keywords&wt=javabin&version=2} hits=0 status=0 QTime=0
+2019-06-20 14:30:04.080 INFO  (http-nio-8014-exec-2) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=蓝&df=product_keywords&wt=javabin&version=2} hits=1 status=0 QTime=0
+2019-06-20 14:33:18.943 INFO  (http-nio-8014-exec-1) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={df=product_keywords&wt=javabin&version=2} hits=0 status=0 QTime=0
+2019-06-20 14:33:23.865 INFO  (http-nio-8014-exec-8) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=蓝&df=product_keywords&wt=javabin&version=2} hits=1 status=0 QTime=0
+2019-06-20 14:35:04.493 INFO  (http-nio-8014-exec-9) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1561010715138} status=0 QTime=0
+2019-06-20 14:35:04.542 INFO  (http-nio-8014-exec-7) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1561012506407} status=0 QTime=0
+2019-06-20 14:35:04.549 INFO  (http-nio-8014-exec-6) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1561010715138} status=0 QTime=18
+2019-06-20 14:35:04.619 INFO  (http-nio-8014-exec-4) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1561010715138} status=0 QTime=0
+2019-06-20 14:35:04.625 INFO  (http-nio-8014-exec-5) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1561012506407} status=0 QTime=0
+2019-06-20 14:35:04.630 INFO  (http-nio-8014-exec-2) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1561010715138} status=0 QTime=8
+2019-06-20 14:35:04.653 INFO  (http-nio-8014-exec-1) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=show-config&_=1561012506407} status=0 QTime=0
+2019-06-20 14:35:04.711 INFO  (http-nio-8014-exec-7) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1561012506407} status=0 QTime=0
+2019-06-20 14:35:07.104 INFO  (http-nio-8014-exec-4) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1561012506407} status=0 QTime=0
+2019-06-20 14:35:07.825 INFO  (http-nio-8014-exec-2) [   x:testcore01] o.a.s.h.d.DataImporter Loading DIH Configuration: data-config.xml
+2019-06-20 14:35:07.827 INFO  (http-nio-8014-exec-2) [   x:testcore01] o.a.s.h.d.DataImporter Data Configuration loaded successfully
+2019-06-20 14:35:07.829 INFO  (http-nio-8014-exec-2) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/dataimport params={core=testcore01&indent=on&commit=true&name=dataimport&clean=true&wt=json&command=full-import&_=1561012506407&verbose=false} status=0 QTime=3
+2019-06-20 14:35:07.829 INFO  (Thread-14) [   ] o.a.s.h.d.DataImporter Starting Full Import
+2019-06-20 14:35:07.833 INFO  (Thread-14) [   ] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
+2019-06-20 14:35:07.845 INFO  (Thread-14) [   ] o.a.s.s.SolrIndexSearcher Opening [Searcher@1659b1a4[testcore01] realtime]
+2019-06-20 14:35:07.849 INFO  (Thread-14) [   ] o.a.s.h.d.JdbcDataSource Creating a connection for entity product with URL: jdbc:mysql://localhost:3306/lucene
+2019-06-20 14:35:07.854 INFO  (Thread-14) [   ] o.a.s.h.d.JdbcDataSource Time taken for getConnection(): 5
+2019-06-20 14:35:07.866 INFO  (Thread-14) [   ] o.a.s.h.d.DocBuilder Import completed successfully
+2019-06-20 14:35:07.867 INFO  (Thread-14) [   ] o.a.s.u.DirectUpdateHandler2 start commit{_version_=1636840251448098817,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2019-06-20 14:35:07.867 INFO  (Thread-14) [   ] o.a.s.u.SolrIndexWriter Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@2f9ccb1 commitCommandVersion:1636840251448098817
+2019-06-20 14:35:07.879 INFO  (http-nio-8014-exec-1) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1561012506407} status=0 QTime=0
+2019-06-20 14:35:07.921 INFO  (Thread-14) [   ] o.a.s.s.SolrIndexSearcher Opening [Searcher@4b7c7f3e[testcore01] main]
+2019-06-20 14:35:07.922 INFO  (searcherExecutor-10-thread-1) [   ] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@4b7c7f3e[testcore01] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_a(7.7.2):C10:[diagnostics={os=Linux, java.vendor=Oracle Corporation, java.version=1.8.0_111, java.vm.version=25.111-b14, lucene.version=7.7.2, os.arch=amd64, java.runtime.version=1.8.0_111-b14, source=flush, os.version=3.10.0-514.26.2.el7.x86_64, timestamp=1561012507870}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2019-06-20 14:35:07.922 INFO  (searcherExecutor-10-thread-1) [   ] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2019-06-20 14:35:07.924 INFO  (searcherExecutor-10-thread-1) [   ] o.a.s.c.SolrCore [testcore01] Registered new searcher Searcher@4b7c7f3e[testcore01] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_a(7.7.2):C10:[diagnostics={os=Linux, java.vendor=Oracle Corporation, java.version=1.8.0_111, java.vm.version=25.111-b14, lucene.version=7.7.2, os.arch=amd64, java.runtime.version=1.8.0_111-b14, source=flush, os.version=3.10.0-514.26.2.el7.x86_64, timestamp=1561012507870}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2019-06-20 14:35:07.926 INFO  (Thread-14) [   ] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2019-06-20 14:35:07.928 INFO  (Thread-14) [   ] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
+2019-06-20 14:35:07.928 INFO  (Thread-14) [   ] o.a.s.h.d.SimplePropertiesWriter Wrote last indexed time to dataimport.properties
+2019-06-20 14:35:07.928 INFO  (Thread-14) [   ] o.a.s.h.d.DocBuilder Time taken = 0:0:0.94
+2019-06-20 14:35:07.928 INFO  (Thread-14) [   ] o.a.s.u.p.LogUpdateProcessorFactory [testcore01]  webapp=/solr path=/dataimport params={core=testcore01&indent=on&commit=true&name=dataimport&clean=true&wt=json&command=full-import&_=1561012506407&verbose=false} status=0 QTime=3{deleteByQuery=*:* (-1636840251414544384),add=[1 (1636840251436564480), 10 (1636840251441807360), 2 (1636840251442855936), 3 (1636840251442855937), 4 (1636840251443904512), 5 (1636840251444953088), 6 (1636840251446001664), 7 (1636840251446001665), 8 (1636840251447050240), 9 (1636840251448098816)],commit=} 0 103
+2019-06-20 14:35:09.105 INFO  (http-nio-8014-exec-3) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1561012506407} status=0 QTime=0
+2019-06-20 14:35:10.647 INFO  (http-nio-8014-exec-10) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1561010715138} status=0 QTime=0
+2019-06-20 14:35:10.666 INFO  (http-nio-8014-exec-9) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1561010715138} status=0 QTime=17
+2019-06-20 14:35:12.128 INFO  (http-nio-8014-exec-7) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=*:*&_=1561010720948} hits=10 status=0 QTime=0
+2019-06-20 14:35:19.744 INFO  (http-nio-8014-exec-4) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=蓝&df=product_keywords&wt=javabin&version=2} hits=1 status=0 QTime=1
+2019-06-20 14:35:25.611 INFO  (http-nio-8014-exec-8) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=帽子&df=product_keywords&wt=javabin&version=2} hits=10 status=0 QTime=1
+2019-06-20 14:36:36.674 INFO  (http-nio-8014-exec-7) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={df=product_keywords&wt=javabin&version=2} hits=0 status=0 QTime=0
+2019-06-20 14:36:42.935 INFO  (http-nio-8014-exec-6) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=蓝&df=product_keywords&wt=javabin&version=2} hits=1 status=0 QTime=0
+2019-06-20 14:36:50.488 INFO  (http-nio-8014-exec-4) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=蓝帽子&df=product_keywords&wt=javabin&version=2} hits=10 status=0 QTime=4
+2019-06-20 14:37:04.630 INFO  (http-nio-8014-exec-5) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=金属&df=product_keywords&wt=javabin&version=2} hits=0 status=0 QTime=0
+2019-06-20 14:37:11.154 INFO  (http-nio-8014-exec-2) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=帽子&df=product_keywords&wt=javabin&version=2} hits=10 status=0 QTime=0
+2019-06-20 14:37:33.749 INFO  (http-nio-8014-exec-8) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=蓝&df=product_keywords&wt=javabin&version=2} hits=1 status=0 QTime=0
+2019-06-20 14:37:38.013 INFO  (http-nio-8014-exec-3) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=球&df=product_keywords&wt=javabin&version=2} hits=1 status=0 QTime=0
+2019-06-20 14:38:15.702 INFO  (http-nio-8014-exec-9) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=真&df=product_keywords&wt=javabin&version=2} hits=0 status=0 QTime=0
+2019-06-20 14:38:17.445 INFO  (http-nio-8014-exec-7) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=真&df=product_keywords&wt=javabin&version=2} hits=0 status=0 QTime=0
+2019-06-20 14:38:31.064 INFO  (http-nio-8014-exec-6) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=*:*&_=1561010720948} hits=10 status=0 QTime=0
+2019-06-20 14:38:56.613 INFO  (http-nio-8014-exec-2) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=死&df=product_keywords&wt=javabin&version=2} hits=1 status=0 QTime=0
+2019-06-20 14:40:03.940 INFO  (http-nio-8014-exec-8) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=死&_=1561010720948} hits=0 status=0 QTime=0
+2019-06-20 14:40:26.572 INFO  (http-nio-8014-exec-10) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=死&df=product_keywords&_=1561010720948} hits=1 status=0 QTime=0
+2019-06-20 14:42:19.302 INFO  (http-nio-8014-exec-7) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=product_description:死&_=1561010720948} hits=1 status=0 QTime=0
+2019-06-20 14:42:40.223 INFO  (http-nio-8014-exec-4) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=product_description:真&_=1561010720948} hits=0 status=0 QTime=0
+2019-06-20 14:44:12.321 INFO  (http-nio-8014-exec-2) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=*:*&_=1561010720948} hits=10 status=0 QTime=0
+2019-06-20 14:44:20.176 INFO  (http-nio-8014-exec-1) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1561010715138} status=0 QTime=0
+2019-06-20 14:44:20.222 INFO  (http-nio-8014-exec-3) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1561012506407} status=0 QTime=0
+2019-06-20 14:44:20.230 INFO  (http-nio-8014-exec-8) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1561010715138} status=0 QTime=22
+2019-06-20 14:44:20.308 INFO  (http-nio-8014-exec-10) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1561010715138} status=0 QTime=0
+2019-06-20 14:44:20.313 INFO  (http-nio-8014-exec-7) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1561012506407} status=0 QTime=0
+2019-06-20 14:44:20.319 INFO  (http-nio-8014-exec-9) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1561010715138} status=0 QTime=9
+2019-06-20 14:44:20.342 INFO  (http-nio-8014-exec-6) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=show-config&_=1561012506407} status=0 QTime=0
+2019-06-20 14:44:20.379 INFO  (http-nio-8014-exec-4) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1561012506407} status=0 QTime=0
+2019-06-20 14:44:25.235 INFO  (http-nio-8014-exec-5) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1561012506407} status=0 QTime=0
+2019-06-20 14:44:27.238 INFO  (http-nio-8014-exec-2) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1561012506407} status=0 QTime=0
+2019-06-20 14:44:28.676 INFO  (http-nio-8014-exec-1) [   x:testcore01] o.a.s.h.d.DataImporter Loading DIH Configuration: data-config.xml
+2019-06-20 14:44:28.678 INFO  (http-nio-8014-exec-1) [   x:testcore01] o.a.s.h.d.DataImporter Data Configuration loaded successfully
+2019-06-20 14:44:28.680 INFO  (http-nio-8014-exec-1) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/dataimport params={core=testcore01&indent=on&commit=true&name=dataimport&clean=true&wt=json&command=full-import&_=1561012506407&verbose=false} status=0 QTime=3
+2019-06-20 14:44:28.680 INFO  (Thread-15) [   ] o.a.s.h.d.DataImporter Starting Full Import
+2019-06-20 14:44:28.684 INFO  (Thread-15) [   ] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
+2019-06-20 14:44:28.687 INFO  (Thread-15) [   ] o.a.s.s.SolrIndexSearcher Opening [Searcher@639d8b44[testcore01] realtime]
+2019-06-20 14:44:28.691 INFO  (Thread-15) [   ] o.a.s.h.d.JdbcDataSource Creating a connection for entity product with URL: jdbc:mysql://localhost:3306/lucene
+2019-06-20 14:44:28.701 INFO  (Thread-15) [   ] o.a.s.h.d.JdbcDataSource Time taken for getConnection(): 10
+2019-06-20 14:44:28.717 INFO  (Thread-15) [   ] o.a.s.h.d.DocBuilder Import completed successfully
+2019-06-20 14:44:28.718 INFO  (Thread-15) [   ] o.a.s.u.DirectUpdateHandler2 start commit{_version_=1636840839544045568,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2019-06-20 14:44:28.718 INFO  (Thread-15) [   ] o.a.s.u.SolrIndexWriter Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@2f9ccb1 commitCommandVersion:1636840839544045568
+2019-06-20 14:44:28.725 INFO  (http-nio-8014-exec-3) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1561012506407} status=0 QTime=0
+2019-06-20 14:44:28.776 INFO  (Thread-15) [   ] o.a.s.s.SolrIndexSearcher Opening [Searcher@3b39ac43[testcore01] main]
+2019-06-20 14:44:28.777 INFO  (searcherExecutor-10-thread-1) [   ] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@3b39ac43[testcore01] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_b(7.7.2):C10:[diagnostics={os=Linux, java.vendor=Oracle Corporation, java.version=1.8.0_111, java.vm.version=25.111-b14, lucene.version=7.7.2, os.arch=amd64, java.runtime.version=1.8.0_111-b14, source=flush, os.version=3.10.0-514.26.2.el7.x86_64, timestamp=1561013068736}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2019-06-20 14:44:28.777 INFO  (searcherExecutor-10-thread-1) [   ] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2019-06-20 14:44:28.778 INFO  (searcherExecutor-10-thread-1) [   ] o.a.s.c.SolrCore [testcore01] Registered new searcher Searcher@3b39ac43[testcore01] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_b(7.7.2):C10:[diagnostics={os=Linux, java.vendor=Oracle Corporation, java.version=1.8.0_111, java.vm.version=25.111-b14, lucene.version=7.7.2, os.arch=amd64, java.runtime.version=1.8.0_111-b14, source=flush, os.version=3.10.0-514.26.2.el7.x86_64, timestamp=1561013068736}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2019-06-20 14:44:28.792 INFO  (Thread-15) [   ] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2019-06-20 14:44:28.805 INFO  (Thread-15) [   ] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
+2019-06-20 14:44:28.805 INFO  (Thread-15) [   ] o.a.s.h.d.SimplePropertiesWriter Wrote last indexed time to dataimport.properties
+2019-06-20 14:44:28.805 INFO  (Thread-15) [   ] o.a.s.h.d.DocBuilder Time taken = 0:0:0.121
+2019-06-20 14:44:28.806 INFO  (Thread-15) [   ] o.a.s.u.p.LogUpdateProcessorFactory [testcore01]  webapp=/solr path=/dataimport params={core=testcore01&indent=on&commit=true&name=dataimport&clean=true&wt=json&command=full-import&_=1561012506407&verbose=false} status=0 QTime=3{deleteByQuery=*:* (-1636840839509442560),add=[1 (1636840839527268352), 10 (1636840839536705536), 2 (1636840839537754112), 3 (1636840839538802688), 4 (1636840839538802689), 5 (1636840839539851264), 6 (1636840839540899840), 7 (1636840839540899841), 8 (1636840839541948416), 9 (1636840839542996992)],commit=} 0 129
+2019-06-20 14:44:29.237 INFO  (http-nio-8014-exec-8) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1561012506407} status=0 QTime=0
+2019-06-20 14:44:31.238 INFO  (http-nio-8014-exec-10) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1561012506407} status=0 QTime=0
+2019-06-20 14:44:33.240 INFO  (http-nio-8014-exec-9) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1561012506407} status=0 QTime=0
+2019-06-20 14:44:35.237 INFO  (http-nio-8014-exec-6) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1561012506407} status=0 QTime=0
+2019-06-20 14:44:36.592 INFO  (http-nio-8014-exec-4) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1561010715138} status=0 QTime=0
+2019-06-20 14:44:36.605 INFO  (http-nio-8014-exec-5) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1561010715138} status=0 QTime=10
+2019-06-20 14:45:19.478 INFO  (http-nio-8014-exec-8) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=美丽&df=product_keywords&_=1561010720948} hits=2 status=0 QTime=1
+2019-06-20 14:45:35.163 INFO  (http-nio-8014-exec-10) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=难看&df=product_keywords&_=1561010720948} hits=2 status=0 QTime=0
+2019-06-20 14:45:59.429 INFO  (http-nio-8014-exec-9) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=俊俏&df=product_keywords&_=1561010720948} hits=2 status=0 QTime=1
+2019-06-20 14:57:16.949 INFO  (http-nio-8014-exec-4) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=蓝&df=product_keywords&wt=javabin&version=2} hits=1 status=0 QTime=0
+2019-06-20 14:58:04.357 INFO  (http-nio-8014-exec-2) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={df=product_keywords&wt=javabin&version=2} hits=0 status=0 QTime=0
+2019-06-20 14:58:10.552 INFO  (http-nio-8014-exec-1) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=蓝色&df=product_keywords&wt=javabin&version=2} hits=0 status=0 QTime=0
+2019-06-20 14:58:14.620 INFO  (http-nio-8014-exec-3) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=蓝&df=product_keywords&wt=javabin&version=2} hits=1 status=0 QTime=0
+2019-06-20 15:00:20.004 INFO  (http-nio-8014-exec-10) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={df=product_keywords&wt=javabin&version=2} hits=0 status=0 QTime=0
+2019-06-20 15:00:24.609 INFO  (http-nio-8014-exec-7) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=蓝&df=product_keywords&wt=javabin&version=2} hits=1 status=0 QTime=0
+2019-06-20 15:00:36.874 INFO  (http-nio-8014-exec-9) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=帽子&df=product_keywords&wt=javabin&version=2} hits=10 status=0 QTime=0
+2019-06-20 15:00:43.856 INFO  (http-nio-8014-exec-6) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=布&df=product_keywords&wt=javabin&version=2} hits=0 status=0 QTime=0
+2019-06-20 15:01:03.806 INFO  (http-nio-8014-exec-4) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=布&df=product_keywords&_=1561010720948} hits=0 status=0 QTime=0
+2019-06-20 15:01:12.302 INFO  (http-nio-8014-exec-2) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=布帽子&df=product_keywords&_=1561010720948} hits=10 status=0 QTime=1
+2019-06-20 15:01:30.673 INFO  (http-nio-8014-exec-1) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=金属&df=product_keywords&_=1561010720948} hits=0 status=0 QTime=0
+2019-06-20 15:01:35.242 INFO  (http-nio-8014-exec-3) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=金&df=product_keywords&_=1561010720948} hits=1 status=0 QTime=0
+2019-06-20 15:04:52.655 INFO  (http-nio-8014-exec-9) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1561010715138} status=0 QTime=0
+2019-06-20 15:04:52.668 INFO  (http-nio-8014-exec-6) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1561010715138} status=0 QTime=11
+2019-06-20 15:04:52.691 INFO  (http-nio-8014-exec-4) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1561010719153} status=0 QTime=2
+2019-06-20 15:04:53.197 INFO  (http-nio-8014-exec-1) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1561010715138} status=0 QTime=0
+2019-06-20 15:04:53.201 INFO  (http-nio-8014-exec-8) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1561012506407} status=0 QTime=0
+2019-06-20 15:04:53.205 INFO  (http-nio-8014-exec-3) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1561010715138} status=0 QTime=6
+2019-06-20 15:04:53.281 INFO  (http-nio-8014-exec-10) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1561010715138} status=0 QTime=0
+2019-06-20 15:04:53.286 INFO  (http-nio-8014-exec-6) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1561012506407} status=0 QTime=0
+2019-06-20 15:04:53.287 INFO  (http-nio-8014-exec-9) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=show-config&_=1561012506407} status=0 QTime=0
+2019-06-20 15:04:53.296 INFO  (http-nio-8014-exec-7) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1561010715138} status=0 QTime=12
+2019-06-20 15:04:53.325 INFO  (http-nio-8014-exec-5) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1561012506407} status=0 QTime=0
+2019-06-20 15:04:56.147 INFO  (http-nio-8014-exec-2) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1561012506407} status=0 QTime=0
+2019-06-20 15:04:56.724 INFO  (http-nio-8014-exec-4) [   x:testcore01] o.a.s.h.d.DataImporter Loading DIH Configuration: data-config.xml
+2019-06-20 15:04:56.726 INFO  (http-nio-8014-exec-4) [   x:testcore01] o.a.s.h.d.DataImporter Data Configuration loaded successfully
+2019-06-20 15:04:56.730 INFO  (http-nio-8014-exec-4) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/dataimport params={core=testcore01&indent=on&commit=true&name=dataimport&clean=true&wt=json&command=full-import&_=1561012506407&verbose=false} status=0 QTime=6
+2019-06-20 15:04:56.730 INFO  (Thread-16) [   ] o.a.s.h.d.DataImporter Starting Full Import
+2019-06-20 15:04:56.734 INFO  (Thread-16) [   ] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
+2019-06-20 15:04:56.743 INFO  (Thread-16) [   ] o.a.s.s.SolrIndexSearcher Opening [Searcher@6402057c[testcore01] realtime]
+2019-06-20 15:04:56.747 INFO  (Thread-16) [   ] o.a.s.h.d.JdbcDataSource Creating a connection for entity product with URL: jdbc:mysql://localhost:3306/lucene
+2019-06-20 15:04:56.759 INFO  (Thread-16) [   ] o.a.s.h.d.JdbcDataSource Time taken for getConnection(): 12
+2019-06-20 15:04:56.769 INFO  (Thread-16) [   ] o.a.s.h.d.DocBuilder Import completed successfully
+2019-06-20 15:04:56.769 INFO  (Thread-16) [   ] o.a.s.u.DirectUpdateHandler2 start commit{_version_=1636842127248850944,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2019-06-20 15:04:56.769 INFO  (Thread-16) [   ] o.a.s.u.SolrIndexWriter Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@2f9ccb1 commitCommandVersion:1636842127248850944
+2019-06-20 15:04:56.774 INFO  (http-nio-8014-exec-1) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1561012506407} status=0 QTime=0
+2019-06-20 15:04:56.834 INFO  (Thread-16) [   ] o.a.s.s.SolrIndexSearcher Opening [Searcher@2317ffcc[testcore01] main]
+2019-06-20 15:04:56.834 INFO  (searcherExecutor-10-thread-1) [   ] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@2317ffcc[testcore01] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_c(7.7.2):C10:[diagnostics={os=Linux, java.vendor=Oracle Corporation, java.version=1.8.0_111, java.vm.version=25.111-b14, lucene.version=7.7.2, os.arch=amd64, java.runtime.version=1.8.0_111-b14, source=flush, os.version=3.10.0-514.26.2.el7.x86_64, timestamp=1561014296772}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2019-06-20 15:04:56.834 INFO  (searcherExecutor-10-thread-1) [   ] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2019-06-20 15:04:56.836 INFO  (searcherExecutor-10-thread-1) [   ] o.a.s.c.SolrCore [testcore01] Registered new searcher Searcher@2317ffcc[testcore01] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_c(7.7.2):C10:[diagnostics={os=Linux, java.vendor=Oracle Corporation, java.version=1.8.0_111, java.vm.version=25.111-b14, lucene.version=7.7.2, os.arch=amd64, java.runtime.version=1.8.0_111-b14, source=flush, os.version=3.10.0-514.26.2.el7.x86_64, timestamp=1561014296772}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2019-06-20 15:04:56.838 INFO  (Thread-16) [   ] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2019-06-20 15:04:56.840 INFO  (Thread-16) [   ] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
+2019-06-20 15:04:56.840 INFO  (Thread-16) [   ] o.a.s.h.d.SimplePropertiesWriter Wrote last indexed time to dataimport.properties
+2019-06-20 15:04:56.840 INFO  (Thread-16) [   ] o.a.s.h.d.DocBuilder Time taken = 0:0:0.105
+2019-06-20 15:04:56.840 INFO  (Thread-16) [   ] o.a.s.u.p.LogUpdateProcessorFactory [testcore01]  webapp=/solr path=/dataimport params={core=testcore01&indent=on&commit=true&name=dataimport&clean=true&wt=json&command=full-import&_=1561012506407&verbose=false} status=0 QTime=6{deleteByQuery=*:* (-1636842127213199360),add=[1 (1636842127239413760), 10 (1636842127242559488), 2 (1636842127243608064), 3 (1636842127243608065), 4 (1636842127244656640), 5 (1636842127245705216), 6 (1636842127245705217), 7 (1636842127246753792), 8 (1636842127246753793), 9 (1636842127247802368)],commit=} 0 117
+2019-06-20 15:04:58.153 INFO  (http-nio-8014-exec-8) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1561012506407} status=0 QTime=0
+2019-06-20 15:05:00.149 INFO  (http-nio-8014-exec-3) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1561012506407} status=0 QTime=0
+2019-06-20 15:05:02.149 INFO  (http-nio-8014-exec-10) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1561012506407} status=0 QTime=0
+2019-06-20 15:05:02.816 INFO  (http-nio-8014-exec-9) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1561010715138} status=0 QTime=0
+2019-06-20 15:05:02.844 INFO  (http-nio-8014-exec-7) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1561010715138} status=0 QTime=25
+2019-06-20 15:05:04.023 INFO  (http-nio-8014-exec-2) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=*:*&_=1561010720948} hits=10 status=0 QTime=1
+2019-06-20 15:05:27.192 INFO  (http-nio-8014-exec-6) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=彩色&df=product_keywords&_=1561010720948} hits=0 status=0 QTime=0
+2019-06-20 15:06:49.997 INFO  (http-nio-8014-exec-3) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1561010715138} status=0 QTime=0
+2019-06-20 15:06:50.014 INFO  (http-nio-8014-exec-6) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1561012506407} status=0 QTime=0
+2019-06-20 15:06:50.036 INFO  (http-nio-8014-exec-10) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1561010715138} status=0 QTime=32
+2019-06-20 15:06:50.092 INFO  (http-nio-8014-exec-9) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1561010715138} status=0 QTime=0
+2019-06-20 15:06:50.093 INFO  (http-nio-8014-exec-7) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1561012506407} status=0 QTime=0
+2019-06-20 15:06:50.104 INFO  (http-nio-8014-exec-5) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1561010715138} status=0 QTime=10
+2019-06-20 15:06:50.128 INFO  (http-nio-8014-exec-2) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=show-config&_=1561012506407} status=0 QTime=0
+2019-06-20 15:06:50.167 INFO  (http-nio-8014-exec-4) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1561012506407} status=0 QTime=0
+2019-06-20 15:06:52.594 INFO  (http-nio-8014-exec-1) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1561012506407} status=0 QTime=0
+2019-06-20 15:06:53.618 INFO  (http-nio-8014-exec-8) [   x:testcore01] o.a.s.h.d.DataImporter Loading DIH Configuration: data-config.xml
+2019-06-20 15:06:53.620 INFO  (http-nio-8014-exec-8) [   x:testcore01] o.a.s.h.d.DataImporter Data Configuration loaded successfully
+2019-06-20 15:06:53.628 INFO  (http-nio-8014-exec-8) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/dataimport params={core=testcore01&indent=on&commit=true&name=dataimport&clean=true&wt=json&command=full-import&_=1561012506407&verbose=false} status=0 QTime=10
+2019-06-20 15:06:53.629 INFO  (Thread-17) [   ] o.a.s.h.d.DataImporter Starting Full Import
+2019-06-20 15:06:53.633 INFO  (Thread-17) [   ] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
+2019-06-20 15:06:53.635 INFO  (Thread-17) [   ] o.a.s.s.SolrIndexSearcher Opening [Searcher@22c31be2[testcore01] realtime]
+2019-06-20 15:06:53.639 INFO  (Thread-17) [   ] o.a.s.h.d.JdbcDataSource Creating a connection for entity product with URL: jdbc:mysql://localhost:3306/lucene
+2019-06-20 15:06:53.646 INFO  (Thread-17) [   ] o.a.s.h.d.JdbcDataSource Time taken for getConnection(): 6
+2019-06-20 15:06:53.672 INFO  (Thread-17) [   ] o.a.s.h.d.DocBuilder Import completed successfully
+2019-06-20 15:06:53.672 INFO  (Thread-17) [   ] o.a.s.u.DirectUpdateHandler2 start commit{_version_=1636842249830531072,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2019-06-20 15:06:53.672 INFO  (Thread-17) [   ] o.a.s.u.SolrIndexWriter Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@2f9ccb1 commitCommandVersion:1636842249830531072
+2019-06-20 15:06:53.676 INFO  (http-nio-8014-exec-3) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1561012506407} status=0 QTime=11
+2019-06-20 15:06:53.755 INFO  (Thread-17) [   ] o.a.s.s.SolrIndexSearcher Opening [Searcher@58991e75[testcore01] main]
+2019-06-20 15:06:53.757 INFO  (searcherExecutor-10-thread-1) [   ] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@58991e75[testcore01] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_d(7.7.2):C10:[diagnostics={os=Linux, java.vendor=Oracle Corporation, java.version=1.8.0_111, java.vm.version=25.111-b14, lucene.version=7.7.2, os.arch=amd64, java.runtime.version=1.8.0_111-b14, source=flush, os.version=3.10.0-514.26.2.el7.x86_64, timestamp=1561014413676}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2019-06-20 15:06:53.757 INFO  (searcherExecutor-10-thread-1) [   ] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2019-06-20 15:06:53.758 INFO  (searcherExecutor-10-thread-1) [   ] o.a.s.c.SolrCore [testcore01] Registered new searcher Searcher@58991e75[testcore01] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_d(7.7.2):C10:[diagnostics={os=Linux, java.vendor=Oracle Corporation, java.version=1.8.0_111, java.vm.version=25.111-b14, lucene.version=7.7.2, os.arch=amd64, java.runtime.version=1.8.0_111-b14, source=flush, os.version=3.10.0-514.26.2.el7.x86_64, timestamp=1561014413676}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2019-06-20 15:06:53.765 INFO  (Thread-17) [   ] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2019-06-20 15:06:53.766 INFO  (Thread-17) [   ] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
+2019-06-20 15:06:53.766 INFO  (Thread-17) [   ] o.a.s.h.d.SimplePropertiesWriter Wrote last indexed time to dataimport.properties
+2019-06-20 15:06:53.766 INFO  (Thread-17) [   ] o.a.s.h.d.DocBuilder Time taken = 0:0:0.133
+2019-06-20 15:06:53.766 INFO  (Thread-17) [   ] o.a.s.u.p.LogUpdateProcessorFactory [testcore01]  webapp=/solr path=/dataimport params={core=testcore01&indent=on&commit=true&name=dataimport&clean=true&wt=json&command=full-import&_=1561012506407&verbose=false} status=0 QTime=10{deleteByQuery=*:* (-1636842249789636608),add=[1 (1636842249804316672), 10 (1636842249825288192), 2 (1636842249825288193), 3 (1636842249826336768), 4 (1636842249826336769), 5 (1636842249827385344), 6 (1636842249827385345), 7 (1636842249828433920), 8 (1636842249829482496), 9 (1636842249829482497)],commit=} 0 148
+2019-06-20 15:06:54.599 INFO  (http-nio-8014-exec-6) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1561012506407} status=0 QTime=0
+2019-06-20 15:06:56.598 INFO  (http-nio-8014-exec-10) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1561012506407} status=0 QTime=0
+2019-06-20 15:06:57.915 INFO  (http-nio-8014-exec-9) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1561010715138} status=0 QTime=0
+2019-06-20 15:06:57.924 INFO  (http-nio-8014-exec-7) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1561010715138} status=0 QTime=7
+2019-06-20 15:07:09.595 INFO  (http-nio-8014-exec-5) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=彩色&df=product_keywords&_=1561010720948} hits=3 status=0 QTime=1
+2019-06-20 15:07:17.548 INFO  (http-nio-8014-exec-1) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=金属&df=product_keywords&_=1561010720948} hits=3 status=0 QTime=0
+2019-06-20 15:07:30.115 INFO  (http-nio-8014-exec-3) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=布&df=product_keywords&wt=javabin&version=2} hits=0 status=0 QTime=0
+2019-06-20 15:07:38.876 INFO  (http-nio-8014-exec-10) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=场景帽子&df=product_keywords&wt=javabin&version=2} hits=10 status=0 QTime=1
+2019-06-20 15:07:53.665 INFO  (http-nio-8014-exec-9) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=常见&df=product_keywords&wt=javabin&version=2} hits=2 status=0 QTime=1
+2019-06-20 15:08:35.001 INFO  (http-nio-8014-exec-5) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1561010715138} status=0 QTime=0
+2019-06-20 15:08:35.019 INFO  (http-nio-8014-exec-2) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1561012506407} status=0 QTime=0
+2019-06-20 15:08:35.035 INFO  (http-nio-8014-exec-2) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1561010715138} status=0 QTime=15
+2019-06-20 15:08:35.092 INFO  (http-nio-8014-exec-1) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1561010715138} status=0 QTime=0
+2019-06-20 15:08:35.120 INFO  (http-nio-8014-exec-3) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1561012506407} status=0 QTime=0
+2019-06-20 15:08:35.131 INFO  (http-nio-8014-exec-6) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=show-config&_=1561012506407} status=0 QTime=0
+2019-06-20 15:08:35.136 INFO  (http-nio-8014-exec-8) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1561010715138} status=0 QTime=19
+2019-06-20 15:08:35.174 INFO  (http-nio-8014-exec-10) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1561012506407} status=0 QTime=0
+2019-06-20 15:08:37.641 INFO  (http-nio-8014-exec-9) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1561012506407} status=0 QTime=0
+2019-06-20 15:08:37.945 INFO  (http-nio-8014-exec-7) [   x:testcore01] o.a.s.h.d.DataImporter Loading DIH Configuration: data-config.xml
+2019-06-20 15:08:37.947 INFO  (http-nio-8014-exec-7) [   x:testcore01] o.a.s.h.d.DataImporter Data Configuration loaded successfully
+2019-06-20 15:08:37.952 INFO  (http-nio-8014-exec-7) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/dataimport params={core=testcore01&indent=on&commit=true&name=dataimport&clean=true&wt=json&command=full-import&_=1561012506407&verbose=false} status=0 QTime=7
+2019-06-20 15:08:37.954 INFO  (Thread-18) [   ] o.a.s.h.d.DataImporter Starting Full Import
+2019-06-20 15:08:37.958 INFO  (Thread-18) [   ] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
+2019-06-20 15:08:37.961 INFO  (Thread-18) [   ] o.a.s.s.SolrIndexSearcher Opening [Searcher@22d8cad6[testcore01] realtime]
+2019-06-20 15:08:37.964 INFO  (Thread-18) [   ] o.a.s.h.d.JdbcDataSource Creating a connection for entity product with URL: jdbc:mysql://localhost:3306/lucene
+2019-06-20 15:08:37.983 INFO  (Thread-18) [   ] o.a.s.h.d.JdbcDataSource Time taken for getConnection(): 18
+2019-06-20 15:08:38.005 INFO  (Thread-18) [   ] o.a.s.h.d.DocBuilder Import completed successfully
+2019-06-20 15:08:38.005 INFO  (Thread-18) [   ] o.a.s.u.DirectUpdateHandler2 start commit{_version_=1636842359231610881,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2019-06-20 15:08:38.005 INFO  (Thread-18) [   ] o.a.s.u.SolrIndexWriter Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@2f9ccb1 commitCommandVersion:1636842359231610881
+2019-06-20 15:08:38.007 INFO  (http-nio-8014-exec-5) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1561012506407} status=0 QTime=8
+2019-06-20 15:08:38.073 INFO  (Thread-18) [   ] o.a.s.s.SolrIndexSearcher Opening [Searcher@33f57749[testcore01] main]
+2019-06-20 15:08:38.074 INFO  (searcherExecutor-10-thread-1) [   ] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@33f57749[testcore01] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_e(7.7.2):C10:[diagnostics={os=Linux, java.vendor=Oracle Corporation, java.version=1.8.0_111, java.vm.version=25.111-b14, lucene.version=7.7.2, os.arch=amd64, java.runtime.version=1.8.0_111-b14, source=flush, os.version=3.10.0-514.26.2.el7.x86_64, timestamp=1561014518025}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2019-06-20 15:08:38.074 INFO  (searcherExecutor-10-thread-1) [   ] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2019-06-20 15:08:38.075 INFO  (searcherExecutor-10-thread-1) [   ] o.a.s.c.SolrCore [testcore01] Registered new searcher Searcher@33f57749[testcore01] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_e(7.7.2):C10:[diagnostics={os=Linux, java.vendor=Oracle Corporation, java.version=1.8.0_111, java.vm.version=25.111-b14, lucene.version=7.7.2, os.arch=amd64, java.runtime.version=1.8.0_111-b14, source=flush, os.version=3.10.0-514.26.2.el7.x86_64, timestamp=1561014518025}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2019-06-20 15:08:38.076 INFO  (Thread-18) [   ] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2019-06-20 15:08:38.081 INFO  (Thread-18) [   ] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
+2019-06-20 15:08:38.081 INFO  (Thread-18) [   ] o.a.s.h.d.SimplePropertiesWriter Wrote last indexed time to dataimport.properties
+2019-06-20 15:08:38.081 INFO  (Thread-18) [   ] o.a.s.h.d.DocBuilder Time taken = 0:0:0.123
+2019-06-20 15:08:38.081 INFO  (Thread-18) [   ] o.a.s.u.p.LogUpdateProcessorFactory [testcore01]  webapp=/solr path=/dataimport params={core=testcore01&indent=on&commit=true&name=dataimport&clean=true&wt=json&command=full-import&_=1561012506407&verbose=false} status=0 QTime=7{deleteByQuery=*:* (-1636842359182327808),add=[1 (1636842359210639360), 10 (1636842359226368000), 2 (1636842359227416576), 3 (1636842359228465152), 4 (1636842359228465153), 5 (1636842359229513728), 6 (1636842359229513729), 7 (1636842359230562304), 8 (1636842359230562305), 9 (1636842359231610880)],commit=} 0 136
+2019-06-20 15:08:39.642 INFO  (http-nio-8014-exec-4) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1561012506407} status=0 QTime=0
+2019-06-20 15:08:41.641 INFO  (http-nio-8014-exec-2) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1561012506407} status=0 QTime=0
+2019-06-20 15:08:43.842 INFO  (http-nio-8014-exec-1) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1561012506407} status=0 QTime=0
+2019-06-20 15:08:44.338 INFO  (http-nio-8014-exec-3) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=常见&df=product_keywords&wt=javabin&version=2} hits=2 status=0 QTime=1
+2019-06-20 15:08:45.838 INFO  (http-nio-8014-exec-8) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1561012506407} status=0 QTime=0
+2019-06-20 15:08:46.789 INFO  (http-nio-8014-exec-10) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=帽子&df=product_keywords&wt=javabin&version=2} hits=10 status=0 QTime=0
+2019-06-20 15:08:47.838 INFO  (http-nio-8014-exec-9) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1561012506407} status=0 QTime=0
+2019-06-20 15:08:49.839 INFO  (http-nio-8014-exec-7) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1561012506407} status=0 QTime=0
+2019-06-20 15:08:51.851 INFO  (http-nio-8014-exec-5) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1561012506407} status=0 QTime=0
+2019-06-20 15:08:53.839 INFO  (http-nio-8014-exec-4) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1561012506407} status=0 QTime=0
+2019-06-20 15:08:54.804 INFO  (http-nio-8014-exec-2) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=彩色&df=product_keywords&wt=javabin&version=2} hits=3 status=0 QTime=0
+2019-06-20 15:08:55.844 INFO  (http-nio-8014-exec-6) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1561012506407} status=0 QTime=0
+2019-06-20 15:08:57.847 INFO  (http-nio-8014-exec-8) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1561012506407} status=0 QTime=0
+2019-06-20 15:08:59.837 INFO  (http-nio-8014-exec-10) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1561012506407} status=0 QTime=0
+2019-06-20 15:09:01.841 INFO  (http-nio-8014-exec-9) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1561012506407} status=0 QTime=0
+2019-06-20 15:09:02.281 INFO  (http-nio-8014-exec-7) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=红&df=product_keywords&wt=javabin&version=2} hits=0 status=0 QTime=0
+2019-06-20 15:09:03.845 INFO  (http-nio-8014-exec-5) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1561012506407} status=0 QTime=0
+2019-06-20 15:09:05.846 INFO  (http-nio-8014-exec-4) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1561012506407} status=0 QTime=0
+2019-06-20 15:09:07.846 INFO  (http-nio-8014-exec-2) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1561012506407} status=0 QTime=0
+2019-06-20 15:09:09.845 INFO  (http-nio-8014-exec-1) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1561012506407} status=0 QTime=0
+2019-06-20 15:09:11.845 INFO  (http-nio-8014-exec-3) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1561012506407} status=0 QTime=0
+2019-06-20 15:09:13.840 INFO  (http-nio-8014-exec-6) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1561012506407} status=0 QTime=0
+2019-06-20 15:09:15.844 INFO  (http-nio-8014-exec-8) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1561012506407} status=0 QTime=0
+2019-06-20 15:09:17.273 INFO  (http-nio-8014-exec-10) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=红帽子&df=product_keywords&wt=javabin&version=2} hits=10 status=0 QTime=1
+2019-06-20 15:09:17.843 INFO  (http-nio-8014-exec-9) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1561012506407} status=0 QTime=0
+2019-06-20 15:09:19.844 INFO  (http-nio-8014-exec-7) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1561012506407} status=0 QTime=0
+2019-06-20 15:09:21.839 INFO  (http-nio-8014-exec-5) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1561012506407} status=0 QTime=0
+2019-06-20 15:09:23.640 INFO  (http-nio-8014-exec-4) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1561012506407} status=0 QTime=0
+2019-06-20 15:09:25.404 INFO  (http-nio-8014-exec-1) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1561010715138} status=0 QTime=0
+2019-06-20 15:09:25.449 INFO  (http-nio-8014-exec-3) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1561010719153} status=0 QTime=12
+2019-06-20 15:09:25.460 INFO  (http-nio-8014-exec-6) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1561010715138} status=0 QTime=22
+2019-06-20 15:09:29.271 INFO  (http-nio-8014-exec-2) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1561010715138} status=0 QTime=0
+2019-06-20 15:09:29.281 INFO  (http-nio-8014-exec-8) [   x:testcore01] o.a.s.c.PluginBag Going to create a new requestHandler with {type = requestHandler,name = /analysis/field,class = solr.FieldAnalysisRequestHandler,attributes = {class=solr.FieldAnalysisRequestHandler, startup=lazy, useParams=_ANALYSIS_FIELD, name=/analysis/field},args = {startup=lazy,useParams=_ANALYSIS_FIELD}} 
+2019-06-20 15:09:29.285 INFO  (http-nio-8014-exec-10) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1561010719153} status=0 QTime=1
+2019-06-20 15:09:29.295 INFO  (http-nio-8014-exec-1) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1561010715138} status=0 QTime=22
+2019-06-20 15:09:29.341 INFO  (http-nio-8014-exec-8) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/analysis/field params={analysis.fieldvalue=红帽子&analysis.fieldname=content_ik&analysis.showmatch=true&verbose_output=1&wt=json&_=1561014567352} status=0 QTime=59
+2019-06-20 15:09:39.396 INFO  (http-nio-8014-exec-7) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=红帽&df=product_keywords&wt=javabin&version=2} hits=1 status=0 QTime=0
+2019-06-20 15:14:45.953 INFO  (http-nio-8014-exec-9) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=布帽&df=product_keywords&wt=javabin&version=2} hits=1 status=0 QTime=0
+2019-06-20 15:18:00.757 INFO  (http-nio-8014-exec-5) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={df=product_keywords&wt=javabin&version=2} hits=0 status=0 QTime=0
+2019-06-20 15:19:49.755 INFO  (http-nio-8014-exec-2) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=红帽子&df=product_keywords&wt=javabin&version=2} hits=10 status=0 QTime=0
+2019-06-20 15:20:03.911 INFO  (http-nio-8014-exec-1) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=帽子&df=product_keywords&wt=javabin&version=2} hits=10 status=0 QTime=0
+2019-06-20 15:20:12.876 INFO  (http-nio-8014-exec-3) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=红&df=product_keywords&wt=javabin&version=2} hits=0 status=0 QTime=0
+2019-06-20 15:20:16.654 INFO  (http-nio-8014-exec-8) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=红帽&df=product_keywords&wt=javabin&version=2} hits=1 status=0 QTime=0
+2019-06-20 15:32:03.694 INFO  (http-nio-8014-exec-9) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={df=product_keywords&product_price=asc&wt=javabin&version=2} hits=0 status=0 QTime=0
+2019-06-20 15:32:22.155 INFO  (http-nio-8014-exec-7) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=帽子&df=product_keywords&fq=product_price:[10+TO+19]&product_price=asc&wt=javabin&version=2} hits=10 status=0 QTime=19
+2019-06-20 15:32:52.614 INFO  (http-nio-8014-exec-5) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=帽子&df=product_keywords&fq=product_price:[50+TO+*]&product_price=asc&wt=javabin&version=2} hits=0 status=0 QTime=3
+2019-06-20 15:32:54.075 INFO  (http-nio-8014-exec-4) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=帽子&df=product_keywords&fq=product_price:[20+TO+29]&product_price=asc&wt=javabin&version=2} hits=0 status=0 QTime=1
+2019-06-20 15:32:54.945 INFO  (http-nio-8014-exec-2) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=帽子&df=product_keywords&fq=product_price:[0+TO+9]&product_price=asc&wt=javabin&version=2} hits=0 status=0 QTime=1
+2019-06-20 15:32:57.620 INFO  (http-nio-8014-exec-1) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=帽子&df=product_keywords&fq=product_price:[10+TO+19]&product_price=asc&wt=javabin&version=2} hits=10 status=0 QTime=0
+2019-06-20 15:32:59.353 INFO  (http-nio-8014-exec-3) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=帽子&df=product_keywords&fq=product_price:[0+TO+9]&product_price=asc&wt=javabin&version=2} hits=0 status=0 QTime=0
+2019-06-20 15:33:06.278 INFO  (http-nio-8014-exec-8) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=帽子&df=product_keywords&fq=product_price:[10+TO+19]&product_price=asc&wt=javabin&version=2} hits=10 status=0 QTime=0
+2019-06-20 15:33:14.626 INFO  (http-nio-8014-exec-10) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=帽子&df=product_keywords&fq=product_price:[10+TO+19]&product_price=desc&wt=javabin&version=2} hits=10 status=0 QTime=0
+2019-06-20 15:33:22.514 INFO  (http-nio-8014-exec-9) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=帽子&df=product_keywords&fq=product_price:[10+TO+19]&product_price=asc&wt=javabin&version=2} hits=10 status=0 QTime=0
+2019-06-20 15:33:34.259 INFO  (http-nio-8014-exec-7) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=帽子&df=product_keywords&fq=product_price:[10+TO+19]&product_price=desc&wt=javabin&version=2} hits=10 status=0 QTime=0
+2019-06-20 15:33:38.209 INFO  (http-nio-8014-exec-6) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=帽子&df=product_keywords&fq=product_price:[10+TO+19]&product_price=asc&wt=javabin&version=2} hits=10 status=0 QTime=0
+2019-06-20 15:33:39.707 INFO  (http-nio-8014-exec-5) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=帽子&df=product_keywords&fq=product_price:[10+TO+19]&product_price=desc&wt=javabin&version=2} hits=10 status=0 QTime=0
+2019-06-20 15:39:22.861 INFO  (http-nio-8014-exec-2) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1561010715138} status=0 QTime=0
+2019-06-20 15:39:22.884 INFO  (http-nio-8014-exec-1) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1561010715138} status=0 QTime=14
+2019-06-20 15:39:24.716 INFO  (http-nio-8014-exec-3) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=*:*&_=1561010720948} hits=10 status=0 QTime=0
+2019-06-20 15:39:27.167 INFO  (http-nio-8014-exec-8) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1561010715138} status=0 QTime=0
+2019-06-20 15:39:27.174 INFO  (http-nio-8014-exec-10) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1561010715138} status=0 QTime=6
+2019-06-20 15:39:27.203 INFO  (http-nio-8014-exec-9) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1561012506407} status=0 QTime=0
+2019-06-20 15:39:27.275 INFO  (http-nio-8014-exec-7) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1561010715138} status=0 QTime=0
+2019-06-20 15:39:27.277 INFO  (http-nio-8014-exec-5) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1561012506407} status=0 QTime=0
+2019-06-20 15:39:27.282 INFO  (http-nio-8014-exec-6) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1561010715138} status=0 QTime=6
+2019-06-20 15:39:27.307 INFO  (http-nio-8014-exec-4) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=show-config&_=1561012506407} status=0 QTime=0
+2019-06-20 15:39:27.346 INFO  (http-nio-8014-exec-2) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1561012506407} status=0 QTime=0
+2019-06-20 15:39:29.485 INFO  (http-nio-8014-exec-1) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1561012506407} status=0 QTime=0
+2019-06-20 15:39:30.249 INFO  (http-nio-8014-exec-3) [   x:testcore01] o.a.s.h.d.DataImporter Loading DIH Configuration: data-config.xml
+2019-06-20 15:39:30.256 INFO  (http-nio-8014-exec-3) [   x:testcore01] o.a.s.h.d.DataImporter Data Configuration loaded successfully
+2019-06-20 15:39:30.259 INFO  (http-nio-8014-exec-3) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/dataimport params={core=testcore01&indent=on&commit=true&name=dataimport&clean=true&wt=json&command=full-import&_=1561012506407&verbose=false} status=0 QTime=9
+2019-06-20 15:39:30.261 INFO  (Thread-19) [   ] o.a.s.h.d.DataImporter Starting Full Import
+2019-06-20 15:39:30.276 INFO  (Thread-19) [   ] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
+2019-06-20 15:39:30.279 INFO  (Thread-19) [   ] o.a.s.s.SolrIndexSearcher Opening [Searcher@40172772[testcore01] realtime]
+2019-06-20 15:39:30.283 INFO  (Thread-19) [   ] o.a.s.h.d.JdbcDataSource Creating a connection for entity product with URL: jdbc:mysql://localhost:3306/lucene
+2019-06-20 15:39:30.292 INFO  (Thread-19) [   ] o.a.s.h.d.JdbcDataSource Time taken for getConnection(): 8
+2019-06-20 15:39:30.304 INFO  (Thread-19) [   ] o.a.s.h.d.DocBuilder Import completed successfully
+2019-06-20 15:39:30.304 INFO  (Thread-19) [   ] o.a.s.u.DirectUpdateHandler2 start commit{_version_=1636844301507887105,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2019-06-20 15:39:30.304 INFO  (Thread-19) [   ] o.a.s.u.SolrIndexWriter Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@2f9ccb1 commitCommandVersion:1636844301507887105
+2019-06-20 15:39:30.308 INFO  (http-nio-8014-exec-8) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1561012506407} status=0 QTime=13
+2019-06-20 15:39:30.364 INFO  (Thread-19) [   ] o.a.s.s.SolrIndexSearcher Opening [Searcher@158f9daf[testcore01] main]
+2019-06-20 15:39:30.364 INFO  (searcherExecutor-10-thread-1) [   ] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@158f9daf[testcore01] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_f(7.7.2):C10:[diagnostics={os=Linux, java.vendor=Oracle Corporation, java.version=1.8.0_111, java.vm.version=25.111-b14, lucene.version=7.7.2, os.arch=amd64, java.runtime.version=1.8.0_111-b14, source=flush, os.version=3.10.0-514.26.2.el7.x86_64, timestamp=1561016370308}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2019-06-20 15:39:30.364 INFO  (searcherExecutor-10-thread-1) [   ] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2019-06-20 15:39:30.366 INFO  (searcherExecutor-10-thread-1) [   ] o.a.s.c.SolrCore [testcore01] Registered new searcher Searcher@158f9daf[testcore01] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_f(7.7.2):C10:[diagnostics={os=Linux, java.vendor=Oracle Corporation, java.version=1.8.0_111, java.vm.version=25.111-b14, lucene.version=7.7.2, os.arch=amd64, java.runtime.version=1.8.0_111-b14, source=flush, os.version=3.10.0-514.26.2.el7.x86_64, timestamp=1561016370308}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2019-06-20 15:39:30.370 INFO  (Thread-19) [   ] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2019-06-20 15:39:30.371 INFO  (Thread-19) [   ] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
+2019-06-20 15:39:30.371 INFO  (Thread-19) [   ] o.a.s.h.d.SimplePropertiesWriter Wrote last indexed time to dataimport.properties
+2019-06-20 15:39:30.371 INFO  (Thread-19) [   ] o.a.s.h.d.DocBuilder Time taken = 0:0:0.95
+2019-06-20 15:39:30.371 INFO  (Thread-19) [   ] o.a.s.u.p.LogUpdateProcessorFactory [testcore01]  webapp=/solr path=/dataimport params={core=testcore01&indent=on&commit=true&name=dataimport&clean=true&wt=json&command=full-import&_=1561012506407&verbose=false} status=0 QTime=9{deleteByQuery=*:* (-1636844301478526976),add=[1 (1636844301495304192), 10 (1636844301503692800), 2 (1636844301503692801), 3 (1636844301504741376), 4 (1636844301504741377), 5 (1636844301505789952), 6 (1636844301505789953), 7 (1636844301506838528), 8 (1636844301506838529), 9 (1636844301507887104)],commit=} 0 122
+2019-06-20 15:39:31.512 INFO  (http-nio-8014-exec-9) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1561012506407} status=0 QTime=0
+2019-06-20 15:39:32.963 INFO  (http-nio-8014-exec-7) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1561010715138} status=0 QTime=0
+2019-06-20 15:39:32.973 INFO  (http-nio-8014-exec-5) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1561010715138} status=0 QTime=6
+2019-06-20 15:39:34.347 INFO  (http-nio-8014-exec-2) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=*:*&_=1561010720948} hits=10 status=0 QTime=0
+2019-06-20 15:39:45.410 INFO  (http-nio-8014-exec-6) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={df=product_keywords&sort=product_price+asc&wt=javabin&version=2} hits=0 status=0 QTime=0
+2019-06-20 15:39:56.367 INFO  (http-nio-8014-exec-6) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=蓝帽&df=product_keywords&sort=product_price+asc&wt=javabin&version=2} hits=1 status=0 QTime=0
+2019-06-20 15:40:00.683 INFO  (http-nio-8014-exec-5) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=蓝帽子&df=product_keywords&sort=product_price+asc&wt=javabin&version=2} hits=10 status=0 QTime=2
+2019-06-20 15:40:12.194 INFO  (http-nio-8014-exec-8) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=蓝帽子&df=product_keywords&sort=product_price+desc&wt=javabin&version=2} hits=10 status=0 QTime=1
+2019-06-20 15:40:22.562 INFO  (http-nio-8014-exec-5) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=金属&df=product_keywords&sort=product_price+desc&wt=javabin&version=2} hits=3 status=0 QTime=0
+2019-06-20 15:40:32.930 INFO  (http-nio-8014-exec-7) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=金属&df=product_keywords&sort=product_price+asc&wt=javabin&version=2} hits=3 status=0 QTime=0
+2019-06-20 15:40:38.537 INFO  (http-nio-8014-exec-3) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=帽子&df=product_keywords&sort=product_price+asc&wt=javabin&version=2} hits=10 status=0 QTime=0
+2019-06-20 15:40:39.938 INFO  (http-nio-8014-exec-8) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=帽子&df=product_keywords&fq=product_price:[10+TO+19]&sort=product_price+asc&wt=javabin&version=2} hits=1 status=0 QTime=1
+2019-06-20 15:40:41.530 INFO  (http-nio-8014-exec-9) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=帽子&df=product_keywords&fq=product_price:[20+TO+29]&sort=product_price+asc&wt=javabin&version=2} hits=1 status=0 QTime=1
+2019-06-20 15:40:42.856 INFO  (http-nio-8014-exec-6) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=帽子&df=product_keywords&fq=product_price:[50+TO+*]&sort=product_price+asc&wt=javabin&version=2} hits=6 status=0 QTime=1
+2019-06-20 15:40:45.402 INFO  (http-nio-8014-exec-4) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=帽子&df=product_keywords&fq=product_price:[40+TO+49]&sort=product_price+asc&wt=javabin&version=2} hits=0 status=0 QTime=1
+2019-06-20 15:40:46.770 INFO  (http-nio-8014-exec-10) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=帽子&df=product_keywords&fq=product_price:[30+TO+39]&sort=product_price+asc&wt=javabin&version=2} hits=1 status=0 QTime=1
+2019-06-20 15:40:49.681 INFO  (http-nio-8014-exec-2) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=帽子&df=product_keywords&fq=product_price:[20+TO+29]&sort=product_price+asc&wt=javabin&version=2} hits=1 status=0 QTime=0
+2019-06-20 15:40:51.105 INFO  (http-nio-8014-exec-1) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=帽子&df=product_keywords&fq=product_price:[10+TO+19]&sort=product_price+asc&wt=javabin&version=2} hits=1 status=0 QTime=0
+2019-06-20 15:40:52.103 INFO  (http-nio-8014-exec-5) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=帽子&df=product_keywords&fq=product_price:[50+TO+*]&sort=product_price+asc&wt=javabin&version=2} hits=6 status=0 QTime=0
+2019-06-20 15:42:19.860 INFO  (http-nio-8014-exec-3) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=帽子&df=product_keywords&fq=product_price:[50+TO+*]&sort=product_price+asc&wt=javabin&version=2} hits=6 status=0 QTime=0
+2019-06-20 15:42:46.326 INFO  (http-nio-8014-exec-9) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=帽子&df=product_keywords&fq=product_price:[20+TO+29]&sort=product_price+asc&wt=javabin&version=2} hits=1 status=0 QTime=0
+2019-06-20 15:42:49.446 INFO  (http-nio-8014-exec-6) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=帽子&df=product_keywords&fq=product_price:[10+TO+19]&sort=product_price+asc&wt=javabin&version=2} hits=1 status=0 QTime=0
+2019-06-20 15:42:56.351 INFO  (http-nio-8014-exec-4) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=帽子&df=product_keywords&fq=product_price:[0+TO+9]&sort=product_price+asc&wt=javabin&version=2} hits=1 status=0 QTime=1
+2019-06-20 15:42:58.547 INFO  (http-nio-8014-exec-10) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=帽子&df=product_keywords&fq=product_price:[10+TO+19]&sort=product_price+asc&wt=javabin&version=2} hits=1 status=0 QTime=0
+2019-06-20 15:42:59.262 INFO  (http-nio-8014-exec-2) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=帽子&df=product_keywords&fq=product_price:[30+TO+39]&sort=product_price+asc&wt=javabin&version=2} hits=1 status=0 QTime=0
+2019-06-20 15:43:00.613 INFO  (http-nio-8014-exec-1) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=帽子&df=product_keywords&fq=product_price:[50+TO+*]&sort=product_price+asc&wt=javabin&version=2} hits=6 status=0 QTime=0
+2019-06-20 15:43:08.523 INFO  (http-nio-8014-exec-5) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=铁帽&df=product_keywords&sort=product_price+asc&wt=javabin&version=2} hits=1 status=0 QTime=0
+2019-06-20 15:53:21.760 INFO  (http-nio-8014-exec-3) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={df=product_keywords&sort=product_price+asc&wt=javabin&version=2} hits=0 status=0 QTime=0
+2019-06-20 15:58:33.448 INFO  (http-nio-8014-exec-9) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={df=product_keywords&sort=product_price+asc&wt=javabin&version=2} hits=0 status=0 QTime=0
+2019-06-20 15:58:43.440 INFO  (http-nio-8014-exec-6) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=蓝帽&df=product_keywords&sort=product_price+asc&wt=javabin&version=2} hits=1 status=0 QTime=0
+2019-06-20 15:58:45.668 INFO  (http-nio-8014-exec-4) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=蓝帽&df=product_keywords&fq=product_price:[40+TO+49]&sort=product_price+asc&wt=javabin&version=2} hits=0 status=0 QTime=8
+2019-06-20 15:58:50.120 INFO  (http-nio-8014-exec-10) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=帽子&df=product_keywords&sort=product_price+asc&wt=javabin&version=2} hits=10 status=0 QTime=0
+2019-06-20 15:58:54.613 INFO  (http-nio-8014-exec-2) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=帽子&df=product_keywords&fq=product_price:[50+TO+*]&sort=product_price+asc&wt=javabin&version=2} hits=6 status=0 QTime=0
+2019-06-20 15:59:07.215 INFO  (http-nio-8014-exec-1) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=帽子&df=product_keywords&fq=product_price:[50+TO+*]&sort=product_price+desc&wt=javabin&version=2} hits=6 status=0 QTime=1
+2019-06-20 15:59:14.966 INFO  (http-nio-8014-exec-5) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=金属&df=product_keywords&sort=product_price+desc&wt=javabin&version=2} hits=3 status=0 QTime=0
+2019-06-20 15:59:20.381 INFO  (http-nio-8014-exec-7) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=金属&df=product_keywords&sort=product_price+asc&wt=javabin&version=2} hits=3 status=0 QTime=0
+2019-06-20 16:21:37.716 INFO  (http-nio-8014-exec-8) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={df=product_keywords&sort=product_price+asc&wt=javabin&version=2} hits=0 status=0 QTime=0
+2019-06-20 16:22:06.692 INFO  (http-nio-8014-exec-6) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=帽子&df=product_keywords&sort=product_price+asc&wt=javabin&version=2} hits=10 status=0 QTime=0
+2019-06-20 16:24:54.720 INFO  (http-nio-8014-exec-10) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={df=product_keywords&sort=product_price+asc&wt=javabin&version=2} hits=0 status=0 QTime=0
+2019-06-20 16:25:06.765 INFO  (http-nio-8014-exec-2) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=红帽&df=product_keywords&sort=product_price+asc&wt=javabin&version=2} hits=1 status=0 QTime=0
+2019-06-20 16:25:10.464 INFO  (http-nio-8014-exec-1) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/select params={q=红&df=product_keywords&sort=product_price+asc&wt=javabin&version=2} hits=0 status=0 QTime=0

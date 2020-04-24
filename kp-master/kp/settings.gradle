@@ -1,0 +1,4 @@
+rootProject.name = 'kp'
+include 'server'
+include 'client'
+

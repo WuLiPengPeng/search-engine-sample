@@ -1,0 +1,84 @@
+2019-06-18 16:33:38.956 ERROR (main) [   ] o.a.s.u.StartupLoggingUtils Missing Java Option solr.log.dir. Logging may be missing or incomplete.
+2019-06-18 16:33:38.987 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
+2019-06-18 16:33:38.992 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 7.7.2
+2019-06-18 16:33:38.992 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port null
+2019-06-18 16:33:38.992 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: null
+2019-06-18 16:33:39.018 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2019-06-18T08:33:38.993Z
+2019-06-18 16:33:39.070 INFO  (main) [   ] o.a.s.c.SolrResourceLoader Using JNDI solr.home: /opt/solrServer/solr/solrhome
+2019-06-18 16:33:39.076 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from /opt/solrServer/solr/solrhome/solr.xml
+2019-06-18 16:33:39.204 INFO  (main) [   ] o.a.s.c.SolrXmlConfig MBean server found: com.sun.jmx.mbeanserver.JmxMBeanServer@5f5a92bb, but no JMX reporters were configured - adding default JMX reporter.
+2019-06-18 16:33:41.169 INFO  (main) [   ] o.a.s.h.c.HttpShardHandlerFactory Host whitelist initialized: WhitelistHostChecker [whitelistHosts=null, whitelistHostCheckingEnabled=true]
+2019-06-18 16:33:41.995 INFO  (main) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient cache for 2147483647 transient cores
+2019-06-18 16:33:41.998 INFO  (main) [   ] o.a.s.h.a.MetricsHistoryHandler No .system collection, keeping metrics history in memory.
+2019-06-18 16:33:42.213 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.node' (registry 'solr.node') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@5f5a92bb
+2019-06-18 16:33:42.214 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jvm' (registry 'solr.jvm') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@5f5a92bb
+2019-06-18 16:33:42.214 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jetty' (registry 'solr.jetty') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@5f5a92bb
+2019-06-18 16:33:42.328 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 1 core definitions underneath /opt/solrServer/solr/solrhome
+2019-06-18 16:33:42.331 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [testcore01]
+2019-06-18 16:33:42.725 WARN  (coreLoadExecutor-9-thread-1) [   x:testcore01] o.a.s.c.SolrConfig Couldn't add files from /opt/solrServer/solr/solrhome/testcore01/../../../../contrib/extraction/lib filtered by .*\.jar to classpath: /opt/solrServer/solr/solrhome/testcore01/../../../../contrib/extraction/lib
+2019-06-18 16:33:42.728 WARN  (coreLoadExecutor-9-thread-1) [   x:testcore01] o.a.s.c.SolrConfig Couldn't add files from /opt/solrServer/solr/solrhome/testcore01/../../../../dist filtered by solr-cell-\d.*\.jar to classpath: /opt/solrServer/solr/solrhome/testcore01/../../../../dist
+2019-06-18 16:33:42.729 WARN  (coreLoadExecutor-9-thread-1) [   x:testcore01] o.a.s.c.SolrConfig Couldn't add files from /opt/solrServer/solr/solrhome/testcore01/../../../../contrib/clustering/lib filtered by .*\.jar to classpath: /opt/solrServer/solr/solrhome/testcore01/../../../../contrib/clustering/lib
+2019-06-18 16:33:42.729 WARN  (coreLoadExecutor-9-thread-1) [   x:testcore01] o.a.s.c.SolrConfig Couldn't add files from /opt/solrServer/solr/solrhome/testcore01/../../../../dist filtered by solr-clustering-\d.*\.jar to classpath: /opt/solrServer/solr/solrhome/testcore01/../../../../dist
+2019-06-18 16:33:42.729 WARN  (coreLoadExecutor-9-thread-1) [   x:testcore01] o.a.s.c.SolrConfig Couldn't add files from /opt/solrServer/solr/solrhome/testcore01/../../../../contrib/langid/lib filtered by .*\.jar to classpath: /opt/solrServer/solr/solrhome/testcore01/../../../../contrib/langid/lib
+2019-06-18 16:33:42.730 WARN  (coreLoadExecutor-9-thread-1) [   x:testcore01] o.a.s.c.SolrConfig Couldn't add files from /opt/solrServer/solr/solrhome/testcore01/../../../../dist filtered by solr-langid-\d.*\.jar to classpath: /opt/solrServer/solr/solrhome/testcore01/../../../../dist
+2019-06-18 16:33:42.763 WARN  (coreLoadExecutor-9-thread-1) [   x:testcore01] o.a.s.c.SolrConfig Couldn't add files from /opt/solrServer/solr/solrhome/testcore01/../../../../contrib/velocity/lib filtered by .*\.jar to classpath: /opt/solrServer/solr/solrhome/testcore01/../../../../contrib/velocity/lib
+2019-06-18 16:33:42.763 WARN  (coreLoadExecutor-9-thread-1) [   x:testcore01] o.a.s.c.SolrConfig Couldn't add files from /opt/solrServer/solr/solrhome/testcore01/../../../../dist filtered by solr-velocity-\d.*\.jar to classpath: /opt/solrServer/solr/solrhome/testcore01/../../../../dist
+2019-06-18 16:33:42.929 INFO  (coreLoadExecutor-9-thread-1) [   x:testcore01] o.a.s.c.SolrConfig Using Lucene MatchVersion: 7.7.2
+2019-06-18 16:33:43.638 INFO  (coreLoadExecutor-9-thread-1) [   x:testcore01] o.a.s.s.IndexSchema [testcore01] Schema name=default-config
+2019-06-18 16:33:44.453 INFO  (http-nio-8014-exec-3) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1560846825306} status=0 QTime=6
+2019-06-18 16:33:44.571 INFO  (http-nio-8014-exec-3) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1560846825307} status=0 QTime=115
+2019-06-18 16:33:45.296 INFO  (coreLoadExecutor-9-thread-1) [   x:testcore01] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2019-06-18 16:33:45.408 INFO  (coreLoadExecutor-9-thread-1) [   x:testcore01] o.a.s.c.CoreContainer Creating SolrCore 'testcore01' using configuration from instancedir /opt/solrServer/solr/solrhome/testcore01, trusted=true
+2019-06-18 16:33:45.426 INFO  (coreLoadExecutor-9-thread-1) [   x:testcore01] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.testcore01' (registry 'solr.core.testcore01') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@5f5a92bb
+2019-06-18 16:33:45.462 INFO  (coreLoadExecutor-9-thread-1) [   x:testcore01] o.a.s.c.SolrCore [[testcore01] ] Opening new SolrCore at [/opt/solrServer/solr/solrhome/testcore01], dataDir=[/opt/solrServer/solr/solrhome/testcore01/data/]
+2019-06-18 16:33:45.707 INFO  (coreLoadExecutor-9-thread-1) [   x:testcore01] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2019-06-18 16:33:46.815 INFO  (coreLoadExecutor-9-thread-1) [   x:testcore01] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2019-06-18 16:33:46.829 INFO  (coreLoadExecutor-9-thread-1) [   x:testcore01] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2019-06-18 16:33:46.847 INFO  (coreLoadExecutor-9-thread-1) [   x:testcore01] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2019-06-18 16:33:46.862 INFO  (coreLoadExecutor-9-thread-1) [   x:testcore01] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2019-06-18 16:33:47.018 INFO  (coreLoadExecutor-9-thread-1) [   x:testcore01] o.a.s.s.SolrIndexSearcher Opening [Searcher@6df54d8a[testcore01] main]
+2019-06-18 16:33:47.053 WARN  (coreLoadExecutor-9-thread-1) [   x:testcore01] o.a.s.r.ManagedResourceStorage Cannot write to config directory /opt/solrServer/solr/solrhome/testcore01/conf; switching to use InMemory storage instead.
+2019-06-18 16:33:47.088 INFO  (coreLoadExecutor-9-thread-1) [   x:testcore01] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2019-06-18 16:33:47.100 INFO  (coreLoadExecutor-9-thread-1) [   x:testcore01] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2019-06-18 16:33:47.113 INFO  (coreLoadExecutor-9-thread-1) [   x:testcore01] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
+2019-06-18 16:33:47.123 INFO  (coreLoadExecutor-9-thread-1) [   x:testcore01] o.a.s.u.UpdateLog Could not find max version in index or recent updates, using new clock 1636666522597326848
+2019-06-18 16:33:47.135 INFO  (searcherExecutor-10-thread-1-processing-x:testcore01) [   x:testcore01] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@6df54d8a[testcore01] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2019-06-18 16:33:47.135 INFO  (searcherExecutor-10-thread-1-processing-x:testcore01) [   x:testcore01] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2019-06-18 16:33:47.135 INFO  (searcherExecutor-10-thread-1-processing-x:testcore01) [   x:testcore01] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2019-06-18 16:33:47.141 INFO  (searcherExecutor-10-thread-1-processing-x:testcore01) [   x:testcore01] o.a.s.c.SolrCore [testcore01] Registered new searcher Searcher@6df54d8a[testcore01] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2019-06-18 16:33:48.922 INFO  (http-nio-8014-exec-10) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1560846825306} status=0 QTime=0
+2019-06-18 16:33:48.940 INFO  (http-nio-8014-exec-5) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1560846825307} status=0 QTime=16
+2019-06-18 16:33:48.997 INFO  (http-nio-8014-exec-10) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1560846825307} status=0 QTime=14
+2019-06-18 16:33:50.161 INFO  (http-nio-8014-exec-2) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1560846825306} status=0 QTime=0
+2019-06-18 16:33:50.179 INFO  (http-nio-8014-exec-9) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1560846831359&since=0} status=0 QTime=6
+2019-06-18 16:33:50.189 INFO  (http-nio-8014-exec-7) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1560846825307} status=0 QTime=26
+2019-06-18 16:33:53.190 INFO  (http-nio-8014-exec-3) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1560846825306} status=0 QTime=0
+2019-06-18 16:33:53.209 INFO  (http-nio-8014-exec-10) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1560846825307&ts=1560846825307} status=503 QTime=1
+2019-06-18 16:33:53.234 INFO  (http-nio-8014-exec-4) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/replication params={wt=json&command=details&_=1560846834383} status=0 QTime=11
+2019-06-18 16:33:53.237 INFO  (http-nio-8014-exec-2) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1560846825601} status=0 QTime=6
+2019-06-18 16:33:53.258 INFO  (http-nio-8014-exec-6) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/admin/system params={wt=json&_=1560846834383} status=0 QTime=61
+2019-06-18 16:33:53.259 INFO  (http-nio-8014-exec-8) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1560846825307} status=0 QTime=53
+2019-06-18 16:33:56.618 INFO  (http-nio-8014-exec-3) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/admin/ping params={wt=json&_=1560846825307&ts=1560846825307} hits=0 status=0 QTime=45
+2019-06-18 16:33:56.619 INFO  (http-nio-8014-exec-3) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/admin/ping params={wt=json&_=1560846825307&ts=1560846825307} status=0 QTime=46
+2019-06-18 16:34:02.145 INFO  (http-nio-8014-exec-5) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1560846825306} status=0 QTime=0
+2019-06-18 16:34:02.160 INFO  (http-nio-8014-exec-2) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1560846825601} status=0 QTime=4
+2019-06-18 16:34:02.228 INFO  (http-nio-8014-exec-10) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1560846825307} status=0 QTime=73
+2019-06-18 16:34:04.533 INFO  (http-nio-8014-exec-9) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1560846825306} status=0 QTime=0
+2019-06-18 16:34:04.534 INFO  (http-nio-8014-exec-7) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1560846845715} status=0 QTime=0
+2019-06-18 16:34:04.565 INFO  (http-nio-8014-exec-7) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1560846825307} status=0 QTime=30
+2019-06-18 16:34:04.611 INFO  (http-nio-8014-exec-3) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1560846825306} status=0 QTime=0
+2019-06-18 16:34:04.616 INFO  (http-nio-8014-exec-5) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1560846845715} status=0 QTime=0
+2019-06-18 16:34:04.634 INFO  (http-nio-8014-exec-4) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1560846825307} status=0 QTime=21
+2019-06-18 16:34:04.781 INFO  (http-nio-8014-exec-2) [   x:testcore01] o.a.s.c.S.Request [testcore01]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1560846825601} status=0 QTime=1
+2019-06-18 16:34:04.785 INFO  (http-nio-8014-exec-8) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1560846825306} status=0 QTime=0
+2019-06-18 16:34:04.805 INFO  (http-nio-8014-exec-10) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1560846825307} status=0 QTime=31
+2019-06-18 16:34:53.048 INFO  (Thread-6) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=441126043
+2019-06-18 16:34:53.055 INFO  (coreCloseExecutor-15-thread-1) [   x:testcore01] o.a.s.c.SolrCore [testcore01]  CLOSING SolrCore org.apache.solr.core.SolrCore@18f550c4
+2019-06-18 16:34:53.055 INFO  (coreCloseExecutor-15-thread-1) [   x:testcore01] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.testcore01, tag=18f550c4
+2019-06-18 16:34:53.056 INFO  (coreCloseExecutor-15-thread-1) [   x:testcore01] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@2810e1ac: rootName = null, domain = solr.core.testcore01, service url = null, agent id = null] for registry solr.core.testcore01 / com.codahale.metrics.MetricRegistry@3c70c382
+2019-06-18 16:34:53.142 INFO  (Thread-6) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.node, tag=null
+2019-06-18 16:34:53.143 INFO  (Thread-6) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@2d83ea1b: rootName = null, domain = solr.node, service url = null, agent id = null] for registry solr.node / com.codahale.metrics.MetricRegistry@71e524ad
+2019-06-18 16:34:53.147 INFO  (Thread-6) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jvm, tag=null
+2019-06-18 16:34:53.164 INFO  (Thread-6) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@67ea360f: rootName = null, domain = solr.jvm, service url = null, agent id = null] for registry solr.jvm / com.codahale.metrics.MetricRegistry@12f37dd6
+2019-06-18 16:34:53.167 INFO  (Thread-6) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jetty, tag=null
+2019-06-18 16:34:53.167 INFO  (Thread-6) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@3c9a8c66: rootName = null, domain = solr.jetty, service url = null, agent id = null] for registry solr.jetty / com.codahale.metrics.MetricRegistry@205addc

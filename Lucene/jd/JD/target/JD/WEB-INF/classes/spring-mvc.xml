@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+	   xmlns:context="http://www.springframework.org/schema/context"
+	   xmlns:mvc="http://www.springframework.org/schema/mvc"
+	   xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+        http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.0.xsd">
+
+	<!-- 扫描基本包  @Controller  @Service @Respostory -->
+	<context:component-scan base-package="com.wlp"/>
+	<!-- 三大组件 -->
+	<mvc:annotation-driven/>
+	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="prefix" value="/WEB-INF/jsp/"/>
+		<property name="suffix" value=".jsp"/>
+	</bean>
+
+	<!-- 配置SOlrJ -->
+	<bean id="solrServer" class="org.apache.solr.client.solrj.impl.HttpSolrClient">
+		<constructor-arg value="http://www.wllife.top:8014/solr"/>
+	</bean>
+
+</beans>
+<!--<?xml version="1.0" encoding="UTF-8"?>-->
+<!--<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop" xmlns:c="http://www.springframework.org/schema/c" xmlns:cache="http://www.springframework.org/schema/cache" xmlns:context="http://www.springframework.org/schema/context" xmlns:jdbc="http://www.springframework.org/schema/jdbc" xmlns:jee="http://www.springframework.org/schema/jee" xmlns:lang="http://www.springframework.org/schema/lang" xmlns:mvc="http://www.springframework.org/schema/mvc" xmlns:p="http://www.springframework.org/schema/p" xmlns:task="http://www.springframework.org/schema/task" xmlns:tx="http://www.springframework.org/schema/tx" xmlns:util="http://www.springframework.org/schema/util"-->
+	<!--xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd-->
+		<!--http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd-->
+		<!--http://www.springframework.org/schema/cache http://www.springframework.org/schema/cache/spring-cache.xsd-->
+		<!--http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd-->
+		<!--http://www.springframework.org/schema/jdbc http://www.springframework.org/schema/jdbc/spring-jdbc.xsd-->
+		<!--http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee.xsd-->
+		<!--http://www.springframework.org/schema/lang http://www.springframework.org/schema/lang/spring-lang.xsd-->
+		<!--http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd-->
+		<!--http://www.springframework.org/schema/task http://www.springframework.org/schema/task/spring-task.xsd-->
+		<!--http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd-->
+		<!--http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">-->
+	<!---->
+	<!--&lt;!&ndash;添加注解驱动 &ndash;&gt;-->
+	<!--<mvc:annotation-driven />-->
+    <!--&lt;!&ndash; spring mvc扫描包路径 ，不扫描service&ndash;&gt;-->
+    <!--<context:component-scan base-package="com.wlp">-->
+	 <!--&lt;!&ndash;<context:include-filter type="annotation" expression="org.springframework.stereotype.Controller" /> &ndash;&gt;-->
+     <!--&lt;!&ndash;<context:exclude-filter type="annotation" expression="org.springframework.stereotype.Service" /> &ndash;&gt;-->
+	<!--</context:component-scan>-->
+
+	 <!--&lt;!&ndash;视图解析器&ndash;&gt;-->
+	<!--<bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">-->
+		<!--<property name="prefix" value="/WEB-INF/jsp"/>-->
+		<!--<property name="suffix" value=".jsp"/>-->
+	<!--</bean>-->
+
+	<!--&lt;!&ndash;配置solr&ndash;&gt;-->
+	<!--<bean id="solrClient" class="org.apache.solr.client.solrj.impl.HttpSolrClient">-->
+		<!--<property name="baseURL" value="http://www.wllife.top:8014/solr"/>-->
+	<!--</bean>-->
+
+	<!--&lt;!&ndash; 静态资源访问 &ndash;&gt;-->
+	<!--&lt;!&ndash;<mvc:resources location="/img/" mapping="/img/**" />&ndash;&gt;-->
+	<!--&lt;!&ndash;<mvc:resources location="/js/"  mapping="/js/**" /> &ndash;&gt;-->
+	<!--&lt;!&ndash;<mvc:resources location="/portal/"  mapping="/portal/**" /> &ndash;&gt;-->
+	<!--&lt;!&ndash;<mvc:resources location="/css/"  mapping="/css/**" />&ndash;&gt;-->
+	<!--&lt;!&ndash;<mvc:resources location="/fonts/"  mapping="/fonts/**"   />&ndash;&gt;-->
+	<!--&lt;!&ndash; 直接访问html页面 &ndash;&gt;-->
+	<!--&lt;!&ndash;<mvc:resources location="/html/" mapping="/html/**"  /> &ndash;&gt;-->
+	<!--&lt;!&ndash;<mvc:resources location="/m/" mapping="/m/**"  />&ndash;&gt;-->
+	<!--&lt;!&ndash;<mvc:resources location="/voice_chat/" mapping="/voice_chat/**"  />&ndash;&gt;-->
+	<!--&lt;!&ndash;<mvc:resources location="/mysftp/upload/" mapping="/mysftp/upload/**"  />&ndash;&gt;-->
+	<!--&lt;!&ndash; 定义跳转文件的前后缀,安全目录,/WEB-INF/modules/防止用户通过url直接访问页面,此处直接定义为webRoot下 / &ndash;&gt;-->
+<!--</beans>-->

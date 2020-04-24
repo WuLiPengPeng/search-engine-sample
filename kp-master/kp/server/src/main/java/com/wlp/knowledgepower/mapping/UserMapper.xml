@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.wlp.knowledgepower.dao.UserMapper">
+
+    <sql id="BASE_TABLE">
+        sys_user
+    </sql>
+    <sql id="BASE_COLUMN">
+        id,username,realName,password,createTime,enabled,lastLoginTime,accountNonExpired,accountNonLocked,credentialsNonExpired
+    </sql>
+
+    <!--根据用户名查询用户数据-->
+    <select id="selectUserByUsername" parameterType="string" resultType="User">
+        SELECT
+          <include refid="BASE_COLUMN"/>
+        FROM
+          <include refid="BASE_TABLE"/>
+        where username = #{username}
+    </select>
+
+    <!--根据用户名查询用户权限-->
+    <select id="selectPermissionByUsername" parameterType="string" resultType="Permission">
+        SELECT
+            _role_perm.*
+        FROM
+            sys_user _user
+        INNER JOIN sys_user_role _user_role ON _user_role.userId = _user.id
+        INNER JOIN sys_role_permission _role_perm ON _role_perm.roleId = _user_role.roleId
+        WHERE
+            _user.username = #{username}
+    </select>
+</mapper>

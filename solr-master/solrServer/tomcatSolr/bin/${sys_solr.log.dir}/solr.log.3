@@ -1,0 +1,99 @@
+2019-06-18 16:49:26.387 ERROR (main) [   ] o.a.s.u.StartupLoggingUtils Missing Java Option solr.log.dir. Logging may be missing or incomplete.
+2019-06-18 16:49:26.413 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
+2019-06-18 16:49:26.417 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 7.7.2
+2019-06-18 16:49:26.417 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port null
+2019-06-18 16:49:26.417 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: null
+2019-06-18 16:49:26.447 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2019-06-18T08:49:26.419Z
+2019-06-18 16:49:26.496 INFO  (main) [   ] o.a.s.c.SolrResourceLoader Using JNDI solr.home: /opt/solrServer/solr/solrhome
+2019-06-18 16:49:26.503 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from /opt/solrServer/solr/solrhome/solr.xml
+2019-06-18 16:49:26.622 INFO  (main) [   ] o.a.s.c.SolrXmlConfig MBean server found: com.sun.jmx.mbeanserver.JmxMBeanServer@5f5a92bb, but no JMX reporters were configured - adding default JMX reporter.
+2019-06-18 16:49:28.185 INFO  (main) [   ] o.a.s.h.c.HttpShardHandlerFactory Host whitelist initialized: WhitelistHostChecker [whitelistHosts=null, whitelistHostCheckingEnabled=true]
+2019-06-18 16:49:29.004 INFO  (main) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient cache for 2147483647 transient cores
+2019-06-18 16:49:29.006 INFO  (main) [   ] o.a.s.h.a.MetricsHistoryHandler No .system collection, keeping metrics history in memory.
+2019-06-18 16:49:29.195 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.node' (registry 'solr.node') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@5f5a92bb
+2019-06-18 16:49:29.197 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jvm' (registry 'solr.jvm') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@5f5a92bb
+2019-06-18 16:49:29.197 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jetty' (registry 'solr.jetty') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@5f5a92bb
+2019-06-18 16:49:29.296 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 1 core definitions underneath /opt/solrServer/solr/solrhome
+2019-06-18 16:49:29.298 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [testcore01]
+2019-06-18 16:49:29.589 WARN  (coreLoadExecutor-9-thread-1) [   x:testcore01] o.a.s.c.SolrConfig Couldn't add files from /opt/solrServer/solr/solrhome/testcore01/../../../../contrib/extraction/lib filtered by .*\.jar to classpath: /opt/solrServer/solr/solrhome/testcore01/../../../../contrib/extraction/lib
+2019-06-18 16:49:29.606 WARN  (coreLoadExecutor-9-thread-1) [   x:testcore01] o.a.s.c.SolrConfig Couldn't add files from /opt/solrServer/solr/solrhome/testcore01/../../../../dist filtered by solr-cell-\d.*\.jar to classpath: /opt/solrServer/solr/solrhome/testcore01/../../../../dist
+2019-06-18 16:49:29.606 WARN  (coreLoadExecutor-9-thread-1) [   x:testcore01] o.a.s.c.SolrConfig Couldn't add files from /opt/solrServer/solr/solrhome/testcore01/../../../../contrib/clustering/lib filtered by .*\.jar to classpath: /opt/solrServer/solr/solrhome/testcore01/../../../../contrib/clustering/lib
+2019-06-18 16:49:29.607 WARN  (coreLoadExecutor-9-thread-1) [   x:testcore01] o.a.s.c.SolrConfig Couldn't add files from /opt/solrServer/solr/solrhome/testcore01/../../../../dist filtered by solr-clustering-\d.*\.jar to classpath: /opt/solrServer/solr/solrhome/testcore01/../../../../dist
+2019-06-18 16:49:29.607 WARN  (coreLoadExecutor-9-thread-1) [   x:testcore01] o.a.s.c.SolrConfig Couldn't add files from /opt/solrServer/solr/solrhome/testcore01/../../../../contrib/langid/lib filtered by .*\.jar to classpath: /opt/solrServer/solr/solrhome/testcore01/../../../../contrib/langid/lib
+2019-06-18 16:49:29.607 WARN  (coreLoadExecutor-9-thread-1) [   x:testcore01] o.a.s.c.SolrConfig Couldn't add files from /opt/solrServer/solr/solrhome/testcore01/../../../../dist filtered by solr-langid-\d.*\.jar to classpath: /opt/solrServer/solr/solrhome/testcore01/../../../../dist
+2019-06-18 16:49:29.607 WARN  (coreLoadExecutor-9-thread-1) [   x:testcore01] o.a.s.c.SolrConfig Couldn't add files from /opt/solrServer/solr/solrhome/testcore01/../../../../contrib/velocity/lib filtered by .*\.jar to classpath: /opt/solrServer/solr/solrhome/testcore01/../../../../contrib/velocity/lib
+2019-06-18 16:49:29.608 WARN  (coreLoadExecutor-9-thread-1) [   x:testcore01] o.a.s.c.SolrConfig Couldn't add files from /opt/solrServer/solr/solrhome/testcore01/../../../../dist filtered by solr-velocity-\d.*\.jar to classpath: /opt/solrServer/solr/solrhome/testcore01/../../../../dist
+2019-06-18 16:49:29.704 INFO  (coreLoadExecutor-9-thread-1) [   x:testcore01] o.a.s.c.SolrConfig Using Lucene MatchVersion: 7.7.2
+2019-06-18 16:49:30.333 INFO  (coreLoadExecutor-9-thread-1) [   x:testcore01] o.a.s.s.IndexSchema [testcore01] Schema name=default-config
+2019-06-18 16:49:31.448 ERROR (coreContainerWorkExecutor-2-thread-1) [   ] o.a.s.c.CoreContainer Error waiting for SolrCore to be loaded on startup
+org.apache.solr.common.SolrException: Unable to create core [testcore01]
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1208) ~[solr-core-7.7.2.jar:7.7.2 d4c30fc2856154f2c1fefc589eb7cd070a415b94 - janhoy - 2019-05-28 23:37:48]
+	at org.apache.solr.core.CoreContainer.lambda$load$13(CoreContainer.java:699) ~[solr-core-7.7.2.jar:7.7.2 d4c30fc2856154f2c1fefc589eb7cd070a415b94 - janhoy - 2019-05-28 23:37:48]
+	at com.codahale.metrics.InstrumentedExecutorService$InstrumentedCallable.call(InstrumentedExecutorService.java:197) ~[metrics-core-3.2.6.jar:3.2.6]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[?:1.8.0_111]
+	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:209) ~[solr-solrj-7.7.2.jar:7.7.2 d4c30fc2856154f2c1fefc589eb7cd070a415b94 - janhoy - 2019-05-28 23:37:52]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [?:1.8.0_111]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [?:1.8.0_111]
+	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_111]
+Caused by: org.apache.solr.common.SolrException: Could not load conf for core testcore01: Can't load schema /opt/solrServer/solr/solrhome/testcore01/managed-schema: Plugin Initializing failure for [schema.xml] fieldType
+	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:97) ~[solr-core-7.7.2.jar:7.7.2 d4c30fc2856154f2c1fefc589eb7cd070a415b94 - janhoy - 2019-05-28 23:37:48]
+	at org.apache.solr.core.CoreContainer.getConfigSet(CoreContainer.java:1236) ~[solr-core-7.7.2.jar:7.7.2 d4c30fc2856154f2c1fefc589eb7cd070a415b94 - janhoy - 2019-05-28 23:37:48]
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1183) ~[solr-core-7.7.2.jar:7.7.2 d4c30fc2856154f2c1fefc589eb7cd070a415b94 - janhoy - 2019-05-28 23:37:48]
+	... 7 more
+Caused by: org.apache.solr.common.SolrException: Can't load schema /opt/solrServer/solr/solrhome/testcore01/managed-schema: Plugin Initializing failure for [schema.xml] fieldType
+	at org.apache.solr.schema.IndexSchema.readSchema(IndexSchema.java:590) ~[solr-core-7.7.2.jar:7.7.2 d4c30fc2856154f2c1fefc589eb7cd070a415b94 - janhoy - 2019-05-28 23:37:48]
+	at org.apache.solr.schema.IndexSchema.<init>(IndexSchema.java:180) ~[solr-core-7.7.2.jar:7.7.2 d4c30fc2856154f2c1fefc589eb7cd070a415b94 - janhoy - 2019-05-28 23:37:48]
+	at org.apache.solr.schema.ManagedIndexSchema.<init>(ManagedIndexSchema.java:105) ~[solr-core-7.7.2.jar:7.7.2 d4c30fc2856154f2c1fefc589eb7cd070a415b94 - janhoy - 2019-05-28 23:37:48]
+	at org.apache.solr.schema.ManagedIndexSchemaFactory.create(ManagedIndexSchemaFactory.java:173) ~[solr-core-7.7.2.jar:7.7.2 d4c30fc2856154f2c1fefc589eb7cd070a415b94 - janhoy - 2019-05-28 23:37:48]
+	at org.apache.solr.schema.ManagedIndexSchemaFactory.create(ManagedIndexSchemaFactory.java:45) ~[solr-core-7.7.2.jar:7.7.2 d4c30fc2856154f2c1fefc589eb7cd070a415b94 - janhoy - 2019-05-28 23:37:48]
+	at org.apache.solr.schema.IndexSchemaFactory.buildIndexSchema(IndexSchemaFactory.java:75) ~[solr-core-7.7.2.jar:7.7.2 d4c30fc2856154f2c1fefc589eb7cd070a415b94 - janhoy - 2019-05-28 23:37:48]
+	at org.apache.solr.core.ConfigSetService.createIndexSchema(ConfigSetService.java:119) ~[solr-core-7.7.2.jar:7.7.2 d4c30fc2856154f2c1fefc589eb7cd070a415b94 - janhoy - 2019-05-28 23:37:48]
+	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:92) ~[solr-core-7.7.2.jar:7.7.2 d4c30fc2856154f2c1fefc589eb7cd070a415b94 - janhoy - 2019-05-28 23:37:48]
+	at org.apache.solr.core.CoreContainer.getConfigSet(CoreContainer.java:1236) ~[solr-core-7.7.2.jar:7.7.2 d4c30fc2856154f2c1fefc589eb7cd070a415b94 - janhoy - 2019-05-28 23:37:48]
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1183) ~[solr-core-7.7.2.jar:7.7.2 d4c30fc2856154f2c1fefc589eb7cd070a415b94 - janhoy - 2019-05-28 23:37:48]
+	... 7 more
+Caused by: org.apache.solr.common.SolrException: Plugin Initializing failure for [schema.xml] fieldType
+	at org.apache.solr.util.plugin.AbstractPluginLoader.load(AbstractPluginLoader.java:194) ~[solr-core-7.7.2.jar:7.7.2 d4c30fc2856154f2c1fefc589eb7cd070a415b94 - janhoy - 2019-05-28 23:37:48]
+	at org.apache.solr.schema.IndexSchema.readSchema(IndexSchema.java:481) ~[solr-core-7.7.2.jar:7.7.2 d4c30fc2856154f2c1fefc589eb7cd070a415b94 - janhoy - 2019-05-28 23:37:48]
+	at org.apache.solr.schema.IndexSchema.<init>(IndexSchema.java:180) ~[solr-core-7.7.2.jar:7.7.2 d4c30fc2856154f2c1fefc589eb7cd070a415b94 - janhoy - 2019-05-28 23:37:48]
+	at org.apache.solr.schema.ManagedIndexSchema.<init>(ManagedIndexSchema.java:105) ~[solr-core-7.7.2.jar:7.7.2 d4c30fc2856154f2c1fefc589eb7cd070a415b94 - janhoy - 2019-05-28 23:37:48]
+	at org.apache.solr.schema.ManagedIndexSchemaFactory.create(ManagedIndexSchemaFactory.java:173) ~[solr-core-7.7.2.jar:7.7.2 d4c30fc2856154f2c1fefc589eb7cd070a415b94 - janhoy - 2019-05-28 23:37:48]
+	at org.apache.solr.schema.ManagedIndexSchemaFactory.create(ManagedIndexSchemaFactory.java:45) ~[solr-core-7.7.2.jar:7.7.2 d4c30fc2856154f2c1fefc589eb7cd070a415b94 - janhoy - 2019-05-28 23:37:48]
+	at org.apache.solr.schema.IndexSchemaFactory.buildIndexSchema(IndexSchemaFactory.java:75) ~[solr-core-7.7.2.jar:7.7.2 d4c30fc2856154f2c1fefc589eb7cd070a415b94 - janhoy - 2019-05-28 23:37:48]
+	at org.apache.solr.core.ConfigSetService.createIndexSchema(ConfigSetService.java:119) ~[solr-core-7.7.2.jar:7.7.2 d4c30fc2856154f2c1fefc589eb7cd070a415b94 - janhoy - 2019-05-28 23:37:48]
+	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:92) ~[solr-core-7.7.2.jar:7.7.2 d4c30fc2856154f2c1fefc589eb7cd070a415b94 - janhoy - 2019-05-28 23:37:48]
+	at org.apache.solr.core.CoreContainer.getConfigSet(CoreContainer.java:1236) ~[solr-core-7.7.2.jar:7.7.2 d4c30fc2856154f2c1fefc589eb7cd070a415b94 - janhoy - 2019-05-28 23:37:48]
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1183) ~[solr-core-7.7.2.jar:7.7.2 d4c30fc2856154f2c1fefc589eb7cd070a415b94 - janhoy - 2019-05-28 23:37:48]
+	... 7 more
+Caused by: java.lang.RuntimeException: Can't set positionIncrementGap on custom analyzer class org.wltea.analyzer.lucene.IKAnalyzer
+	at org.apache.solr.schema.FieldType.setArgs(FieldType.java:201) ~[solr-core-7.7.2.jar:7.7.2 d4c30fc2856154f2c1fefc589eb7cd070a415b94 - janhoy - 2019-05-28 23:37:48]
+	at org.apache.solr.schema.FieldTypePluginLoader.init(FieldTypePluginLoader.java:165) ~[solr-core-7.7.2.jar:7.7.2 d4c30fc2856154f2c1fefc589eb7cd070a415b94 - janhoy - 2019-05-28 23:37:48]
+	at org.apache.solr.schema.FieldTypePluginLoader.init(FieldTypePluginLoader.java:53) ~[solr-core-7.7.2.jar:7.7.2 d4c30fc2856154f2c1fefc589eb7cd070a415b94 - janhoy - 2019-05-28 23:37:48]
+	at org.apache.solr.util.plugin.AbstractPluginLoader.load(AbstractPluginLoader.java:191) ~[solr-core-7.7.2.jar:7.7.2 d4c30fc2856154f2c1fefc589eb7cd070a415b94 - janhoy - 2019-05-28 23:37:48]
+	at org.apache.solr.schema.IndexSchema.readSchema(IndexSchema.java:481) ~[solr-core-7.7.2.jar:7.7.2 d4c30fc2856154f2c1fefc589eb7cd070a415b94 - janhoy - 2019-05-28 23:37:48]
+	at org.apache.solr.schema.IndexSchema.<init>(IndexSchema.java:180) ~[solr-core-7.7.2.jar:7.7.2 d4c30fc2856154f2c1fefc589eb7cd070a415b94 - janhoy - 2019-05-28 23:37:48]
+	at org.apache.solr.schema.ManagedIndexSchema.<init>(ManagedIndexSchema.java:105) ~[solr-core-7.7.2.jar:7.7.2 d4c30fc2856154f2c1fefc589eb7cd070a415b94 - janhoy - 2019-05-28 23:37:48]
+	at org.apache.solr.schema.ManagedIndexSchemaFactory.create(ManagedIndexSchemaFactory.java:173) ~[solr-core-7.7.2.jar:7.7.2 d4c30fc2856154f2c1fefc589eb7cd070a415b94 - janhoy - 2019-05-28 23:37:48]
+	at org.apache.solr.schema.ManagedIndexSchemaFactory.create(ManagedIndexSchemaFactory.java:45) ~[solr-core-7.7.2.jar:7.7.2 d4c30fc2856154f2c1fefc589eb7cd070a415b94 - janhoy - 2019-05-28 23:37:48]
+	at org.apache.solr.schema.IndexSchemaFactory.buildIndexSchema(IndexSchemaFactory.java:75) ~[solr-core-7.7.2.jar:7.7.2 d4c30fc2856154f2c1fefc589eb7cd070a415b94 - janhoy - 2019-05-28 23:37:48]
+	at org.apache.solr.core.ConfigSetService.createIndexSchema(ConfigSetService.java:119) ~[solr-core-7.7.2.jar:7.7.2 d4c30fc2856154f2c1fefc589eb7cd070a415b94 - janhoy - 2019-05-28 23:37:48]
+	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:92) ~[solr-core-7.7.2.jar:7.7.2 d4c30fc2856154f2c1fefc589eb7cd070a415b94 - janhoy - 2019-05-28 23:37:48]
+	at org.apache.solr.core.CoreContainer.getConfigSet(CoreContainer.java:1236) ~[solr-core-7.7.2.jar:7.7.2 d4c30fc2856154f2c1fefc589eb7cd070a415b94 - janhoy - 2019-05-28 23:37:48]
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1183) ~[solr-core-7.7.2.jar:7.7.2 d4c30fc2856154f2c1fefc589eb7cd070a415b94 - janhoy - 2019-05-28 23:37:48]
+	... 7 more
+2019-06-18 16:49:32.442 INFO  (http-nio-8014-exec-4) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1560847773379} status=0 QTime=66
+2019-06-18 16:49:32.492 INFO  (http-nio-8014-exec-5) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1560847773381} status=0 QTime=109
+2019-06-18 16:49:32.564 INFO  (http-nio-8014-exec-6) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1560847773381} status=0 QTime=14
+2019-06-18 16:49:41.968 INFO  (http-nio-8014-exec-7) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1560847773379} status=0 QTime=0
+2019-06-18 16:49:42.010 INFO  (http-nio-8014-exec-9) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1560847783172&since=0} status=0 QTime=1
+2019-06-18 16:49:42.031 INFO  (http-nio-8014-exec-8) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1560847773381} status=0 QTime=60
+2019-06-18 16:49:43.673 INFO  (http-nio-8014-exec-1) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1560847773379} status=0 QTime=0
+2019-06-18 16:49:43.693 INFO  (http-nio-8014-exec-2) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1560847773381} status=0 QTime=14
+2019-06-18 16:49:43.747 INFO  (http-nio-8014-exec-3) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1560847773381} status=0 QTime=11
+2019-06-18 16:55:04.324 INFO  (Thread-6) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=441126043
+2019-06-18 16:55:04.352 INFO  (Thread-6) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.node, tag=null
+2019-06-18 16:55:04.354 INFO  (Thread-6) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@2d83ea1b: rootName = null, domain = solr.node, service url = null, agent id = null] for registry solr.node / com.codahale.metrics.MetricRegistry@422321cd
+2019-06-18 16:55:04.361 INFO  (Thread-6) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jvm, tag=null
+2019-06-18 16:55:04.362 INFO  (Thread-6) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@67ea360f: rootName = null, domain = solr.jvm, service url = null, agent id = null] for registry solr.jvm / com.codahale.metrics.MetricRegistry@5d18bc10
+2019-06-18 16:55:04.364 INFO  (Thread-6) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jetty, tag=null
+2019-06-18 16:55:04.365 INFO  (Thread-6) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@3c9a8c66: rootName = null, domain = solr.jetty, service url = null, agent id = null] for registry solr.jetty / com.codahale.metrics.MetricRegistry@1bd427ec
